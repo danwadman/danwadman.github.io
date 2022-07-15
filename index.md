@@ -2,4 +2,4 @@
 
 - Front end developer
 - Web designer
-- Accesibility auditor 
+- Accessibility auditor 
