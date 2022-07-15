@@ -1,1 +1,7 @@
-## Welcome to my portfolio site
+# Daniel Wadman
+
+---
+
+- Front end developer
+- Web designer
+- Accesibility auditor 
