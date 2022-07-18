@@ -85,31 +85,25 @@
 
       </div>
 
-      <div id="app-2">
-        <span v-bind:title="message">
-          Hover
-        </span>
-      </div>
-
       <div id="portfolio" class="mt-5 pt-5 pb-5">
 
         <div class="container">
 
 
           <div class="row">
-            <div class="col-md-12 d-flex justify-content-center">
+            <div class="col-md-12">
 
-              <h2 class="mb-3 pl-3 pr-3 title"> Portfolio </h2>
+              <h2 class="mb-3 text-center title text-white font-weight-bold"> Portfolio </h2>
 
             <div class="divider"></div>
 
           </div>
 
-            <div class="col-md-12 d-flex p-0">
+            <div class="col-md-12 d-flex p-0 mt-5">
 
-              <div class="col-md-6 d-flex panel">
+              <div class="col-md-6 d-flex panel m-3">
 
-                <div class="col-md-3">
+                <div class="col-md-3 align-self-center">
 
                   <div class="img_container"
                     style="background: url(https://unsplash.com/photos/km_T0yIqfwg/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Z29sZGVuJTIwcmF0aW98ZW58MHx8fHwxNjU4MDg1ODc3&force=true&w=640);">
@@ -125,6 +119,25 @@
                 </div>
 
             </div>
+
+            <div class="col-md-6 d-flex panel m-3">
+
+              <div class="col-md-3 align-self-center">
+
+                <div class="img_container"
+                  style="background: url(https://unsplash.com/photos/km_T0yIqfwg/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Z29sZGVuJTIwcmF0aW98ZW58MHx8fHwxNjU4MDg1ODc3&force=true&w=640);">
+                </div>
+
+              </div>
+
+              <div class="col-md-9">
+
+                <h4 class="title"><a href="golden-ratio" class="font-weight-bold">The golden ration design framework</a></h4>
+                <p class="description">A design and development framework to follow that uses the golden ratio that occurs naturally in nature. .</p>
+
+              </div>
+
+          </div>
 
           </div>
 
@@ -146,8 +159,8 @@
 
       <div class="row">
 
-        <div class="col-md-12">
-          Stuff
+        <div id="app-2" class="col-md-12">
+          © <span v-bind:title="message">2022</span> Daniel Wadman
 
         </div>
 
@@ -194,12 +207,14 @@
 
 
   </script>
+
+  <!-- Vue Scripts -->
   <script>
 
     var app2 = new Vue({
       el: '#app-2',
       data: {
-        message: 'You loaded this page on ' + new Date().toLocaleString()
+        message: new Date().toLocaleString()
       }
     })
 

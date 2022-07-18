@@ -14,7 +14,7 @@ body {
   color: #000000 !important; }
 
 #portfolio {
-  background-color: #c4c4c4; }
+  background-color: #049d99; }
 
 .grey {
   color: #999999;
@@ -37,7 +37,7 @@ h1:focus-visible {
 
 .section-inner {
   max-width: 1400px !important;
-  width: calc( 100% - 4rem ) !important; }
+  width: calc(100% - 4rem) !important; }
 
 #page-content-wrapper {
   min-height: calc(100vh - 205px);
@@ -71,13 +71,14 @@ h1:focus-visible {
 .title {
   font-size: 26px;
   color: #111;
-  text-align: center;
+  text-align: left;
   font-weight: 400; }
 
 .divider {
   width: 55px;
   height: 4px;
-  background: #7b501d; }
+  background: #f99d29;
+  margin: 0 auto; }
 
 /* Nav */
 #site-header {
