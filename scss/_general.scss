@@ -16,6 +16,10 @@ body {
     color: #000000 !important;
 }
 
+#portfolio {
+    background-color: #c4c4c4;
+}
+
 .grey{
    color: #999999;
    font-weight:bold;
@@ -56,4 +60,36 @@ h1:focus-visible {
     padding: 80px 20px 80px 20px;
     border-left: 0px;
     background: #f8f8f8;
+  }
+
+ .img_container {
+    height: 75px;
+    width: 75px;
+    background-size: cover !important;
+    background-position: center center !important;
+    float: left;
+    border-radius: 10px;
+}
+
+.panel {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 1px 1px rgb(235, 235, 235);
+    box-shadow: 0 1px 1px rgb(235, 235, 235);
+    padding: 1.5rem;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .title {
+    font-size: 26px;
+    color: #111;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .divider {
+    width: 55px;
+    height: 4px;
+    background: #7b501d;
   }
