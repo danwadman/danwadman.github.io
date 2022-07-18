@@ -1,0 +1,21 @@
+/*
+    override styles when printing
+*/
+
+@media print {
+    header, footer, img, .btn, .heading-image, .heading-blur {
+        display:none !important;
+    }
+    table {
+        page-break-after:auto
+    }
+    tr {
+        page-break-inside:avoid; page-break-after:auto
+    }
+    td {
+        page-break-inside:avoid; page-break-after:auto
+    }
+    body {
+        margin: auto;
+    }
+}
