@@ -11,13 +11,23 @@ html {
 
 body {
     height: 100%;
-    background-color: #f8f8f8 !important;
+    background-color: #f8f8f8;
     font-size: 16px !important;
     color: #000000 !important;
+    font-family: 'Lato', sans-serif;
 }
 
 #portfolio {
-    background-color: #049d99;
+    background-color: #f8f8f8;
+}
+
+#contact {
+    background-color: #1A1E68;
+}
+
+#about-me {
+    background-color: #008B9A;
+    color: #ffffff;
 }
 
 .grey {
@@ -63,12 +73,22 @@ h1:focus-visible {
 }
 
 .img_container {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
     background-size: cover !important;
     background-position: center center !important;
     float: left;
-    border-radius: 10px;
+    border-radius: 25px;
+}
+
+.img_container_large {
+    height: 250px;
+    width: 250px;
+    float: left;
+    border-radius: 50px;
+    background-size: cover !important;
+    background-position: center center !important;
+    filter: saturate(0.5);
 }
 
 .panel {
@@ -76,14 +96,21 @@ h1:focus-visible {
     -webkit-box-shadow: 0 1px 1px rgb(235, 235, 235);
     box-shadow: 0 1px 1px rgb(235, 235, 235);
     padding: 1.5rem;
-    border-radius: 3px;
+    border-radius: 5px;
     overflow: hidden;
     transition: 0.5s;
 }
 
 .title {
     font-size: 26px;
-    color: #111;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 400;
+}
+
+.title-black {
+    font-size: 26px;
+    color: #000000;
     text-align: left;
     font-weight: 400;
 }
@@ -93,4 +120,15 @@ h1:focus-visible {
     height: 4px;
     background: #f99d29;
     margin: 0 auto;
+}
+
+.divider-white {
+    width: 55px;
+    height: 4px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.fa-github, .fa-at {
+    color: #ffffff
 }
