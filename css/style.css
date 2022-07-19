@@ -21,7 +21,7 @@ body {
   background-color: #1A1E68; }
 
 #about-me {
-  background-color: #008B9A;
+  background-color: #00818F;
   color: #ffffff; }
 
 .grey {
@@ -59,7 +59,7 @@ h1:focus-visible {
   border-left: 0px;
   background: #f8f8f8; }
 
-.img_container {
+.img-container {
   height: 100px;
   width: 100px;
   background-size: cover !important;
@@ -67,9 +67,9 @@ h1:focus-visible {
   float: left;
   border-radius: 25px; }
 
-.img_container_large {
-  height: 250px;
-  width: 250px;
+.img-container-large {
+  height: 200px;
+  width: 200px;
   float: left;
   border-radius: 50px;
   background-size: cover !important;
@@ -112,6 +112,26 @@ h1:focus-visible {
 .fa-github, .fa-at {
   color: #ffffff; }
 
+.modal.modal-fullscreen .modal-dialog {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  max-width: none; }
+
+.modal.modal-fullscreen .modal-content {
+  height: auto;
+  height: 100vh;
+  border-radius: 0;
+  border: none; }
+
+.modal.modal-fullscreen .modal-body {
+  overflow-y: auto;
+  color: #000000; }
+
+.hero {
+  position: absolute; }
+
 /* Nav */
 #site-header {
   background: #ffffff !important;
@@ -123,10 +143,9 @@ h1:focus-visible {
   margin-bottom: 0rem !important; }
 
 nav {
-  background: #ffffff !important;
+  background: #f8f8f8 !important;
   position: sticky;
-  transition: height .15s linear, width .15s linear, max-height .15s linear, padding .15s linear;
-  border-bottom: 1px solid #e2e2e2; }
+  transition: height .15s linear, width .15s linear, max-height .15s linear, padding .15s linear; }
 
 .fa-search,
 .fa-cog,
@@ -341,41 +360,9 @@ canvas {
   display: block;
   vertical-align: bottom; }
 
-/* ---- stats.js ---- */
-.count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold; }
-
-.js-count-particles {
-  font-size: 1.1em; }
-
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px; }
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden; }
-
-.count-particles {
-  border-radius: 0 0 3px 3px; }
-
 /* ---- particles.js container ---- */
 .particles {
-  height: 400px; }
+  height: 360px; }
 
 #particles-js {
   width: 100%;

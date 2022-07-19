@@ -26,7 +26,7 @@ body {
 }
 
 #about-me {
-    background-color: #008B9A;
+    background-color: #00818F;
     color: #ffffff;
 }
 
@@ -72,7 +72,7 @@ h1:focus-visible {
     background: #f8f8f8;
 }
 
-.img_container {
+.img-container {
     height: 100px;
     width: 100px;
     background-size: cover !important;
@@ -81,9 +81,9 @@ h1:focus-visible {
     border-radius: 25px;
 }
 
-.img_container_large {
-    height: 250px;
-    width: 250px;
+.img-container-large {
+    height: 200px;
+    width: 200px;
     float: left;
     border-radius: 50px;
     background-size: cover !important;
@@ -132,3 +132,27 @@ h1:focus-visible {
 .fa-github, .fa-at {
     color: #ffffff
 }
+
+.modal.modal-fullscreen .modal-dialog {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    max-width: none; 
+  }
+  
+  .modal.modal-fullscreen .modal-content {
+    height: auto;
+    height: 100vh;
+    border-radius: 0;
+    border: none; 
+  }
+  
+  .modal.modal-fullscreen .modal-body {
+    overflow-y: auto;
+    color: #000000;
+  }
+
+  .hero {
+    position: absolute;
+  }

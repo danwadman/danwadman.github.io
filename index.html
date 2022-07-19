@@ -36,30 +36,24 @@
 
 <body>
 
-  <nav class="d-flex justify-content-center">
+  <nav class="navbar navbar-expand-lg navbar-light">
 
-    <nav class="navbar navbar-expand-lg navbar-light white">
+    <div class="container">
 
-      <div id="new-brand" title="Logo"></div>
+      <div title="DW logo" class="navbar-brand" href="#"><img src="img/logo.png"></div>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 
         <ul class="navbar-nav">
 
           <!-- About me -->
 
           <li class="nav-item"><a class="nav-link" title="About me" href="#about-me">About me</span></a></li>
-
-          <!-- Logo -->
-
-          <li class="nav-item font-weight-bold">
-            <h1>DW</h1>
-          </li>
 
           <!-- Projects -->
 
@@ -69,7 +63,7 @@
 
       </div>
 
-    </nav>
+    </div>
 
   </nav>
 
@@ -81,11 +75,66 @@
 
         <div id="particles-js">
 
+          <div class="container-fluid hero">
+
+            <div class="row">
+
+              <div class="col-md-12 d-flex justify-content-center align-items-center">
+
+                
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>
 
     </header>
+
+    <!-- About me -->
+
+    <div id="about-me" class="pt-5 pb-5">
+
+      <div class="container">
+
+        <div class="row p-3">
+
+          <div class="col-md-12">
+
+            <h1 class="mb-3 text-center title font-weight-bold"> About me </h1>
+
+            <div class="divider"></div>
+
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-center p-0 mt-5">
+
+            <div class="img-container-large" style="background: url(img/me.jpg);">
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 justify-content-center align-self-center mt-5">
+
+            <p> I'm Daniel Wadman, 3 years experience in front-end development, accessibility audits, ux improvements
+              and web design, 10+ years experience being part of web teams</p>
+
+            <p> I have a 2.1 in multimedia production techonology from the University of Plymouth.</p>
+
+            <p> Performant, simple first, less is more, clear, accessible and honest are my design principles. </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
 
     <!-- Portfolio -->
 
@@ -97,11 +146,12 @@
 
           <div class="col-md-12">
 
-            <h2 class="mb-3 text-center title-black font-weight-bold text-black"> Portfolio </h2>
+            <h1 class="mb-3 text-center title-black font-weight-bold text-black"> Portfolio </h1>
 
             <div class="divider"></div>
 
-            <p class="font-italic mt-3 mb-3 d-flex justify-content-center">A few of the things I've recently been working on</p>
+            <span class="font-italic mt-3 mb-3 d-flex justify-content-center">A few of the things I've recently been
+              working on</span>
 
           </div>
 
@@ -113,23 +163,73 @@
 
               <div class="col-md-3 align-self-center">
 
-                <div class="img_container"
-                  style="background: url(https://unsplash.com/photos/km_T0yIqfwg/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Z29sZGVuJTIwcmF0aW98ZW58MHx8fHwxNjU4MDg1ODc3&force=true&w=640);">
+                <div class="img-container"
+                  style="background: url(https://unsplash.com/photos/uxnWliBKBkg/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU4MjMyOTA0&force=true&w=640);">
                 </div>
 
               </div>
 
               <div class="col-md-9">
 
-                <h4 class="title"><a href="golden-ratio" class="font-weight-bold">The golden ration design
-                    framework</a></h4>
-                <p class="description">A design and development framework to follow that uses the golden ratio that
-                  occurs naturally in nature. .</p>
+                <h2 class="title"><a data-toggle="modal" data-target="#golden-ratio" href="#"
+                    class="font-weight-bold">The
+                    golden ratio design framework</h2></a>
+                <p class="description">A design and development framework that uses the golden ratio.</p>
 
               </div>
 
             </div>
 
+          </div>
+
+          <!-- Golden ratio modal -->
+          <div class="modal fade modal-fullscreen" id="golden-ratio" tabindex="-1" role="dialog"
+            aria-labelledby="golden-ratio" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="golden-ratio-label">The Golden Ratio design and development framework</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="font-italic font-weight-bold">A design and developmet framework I setup as part of my role
+                    at
+                    Webbased Ltd. It involved creating a 'design standards' mini site that other developers could use to
+                    reference. An overview and screenshot can be seen below</h1>
+                  <h2></h2>General design Principles</h2>
+                  <p>Make sure to follow the styles set out in the components section
+                    Were possible try to use REM instead of PX.
+                    If your unsure just ask the design lead
+                    https://getbootstrap.com/docs/4.6/components</p>
+
+                  <h2>Design methodology - The golden ratio</h2>
+                  <p>The golden ratio has been chosen as the basis for the standards as it provides a constitent
+                    methodology to apply to any component, whether font size or hero image size.</p>
+
+                  <p>"Two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the
+                    larger of the two quantities. The figure below illustrates the geometric relationship."</p>
+
+                  <h2>Golden Ratio</h2>
+                  <p></p>Putting this into practice with font sizes, 16px is the body font size, so will be the
+                  'shortest
+                  side', then 26px would need to be the 'longest' to keep them in the golden ratio. The sum of these two
+                  sizes is 42px.</p>
+
+                  <p><img class="img-fluid" src="img/golden-ratio.jpg"></p>
+
+                  <p>The hero image height has been chosen by taking the button height size and multiplying by 15. This
+                    forms the largest size in the layout ratio. The smallest size is then calculated using the golden
+                    ratio, which is 390px. This is the height of each call to action section.</p>
+
+                  <p>For more information on the golden ratio, please visit https://en.wikipedia.org/wiki/Golden_ratio
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Accessibility audits -->
@@ -140,7 +240,7 @@
 
               <div class="col-md-3 align-self-center">
 
-                <div class="img_container"
+                <div class="img-container"
                   style="background: url(https://unsplash.com/photos/HE1zW44Zm_Y/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTh8fGJsaW5kfGVufDB8fHx8MTY1ODIwNjQ3MQ&force=true&w=640);">
                 </div>
 
@@ -148,14 +248,63 @@
 
               <div class="col-md-9">
 
-                <h4 class="title"><a href="golden-ratio" class="font-weight-bold">Accessiblity Improvements</a></h4>
+                <h2 class="title"><a data-toggle="modal" data-target="#accessibility" href="#"
+                    class="font-weight-bold">Accessiblity Improvements</h2></a>
                 <p class="description">Accessiblity audit and front end updates for a large council run website</p>
 
               </div>
 
             </div>
 
+          </div>
 
+          <!-- Golden ratio modal -->
+          <div class="modal fade modal-fullscreen" id="accessiblity" tabindex="-1" role="dialog"
+            aria-labelledby="golden-ratio" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="accessiblity-label">Accessibility Audits</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="font-italic font-weight-bold">Accessiblity audit and front end updates for a large council
+                    run
+                    website</h2>
+
+                  <p>Make sure to follow the styles set out in the components section
+                    Were possible try to use REM instead of PX.
+                    If your unsure just ask the design lead
+                    https://getbootstrap.com/docs/4.6/components</p>
+
+                  <h2>Design methodology - The golden ratio</h2>
+                  <p>The golden ratio has been chosen as the basis for the standards as it provides a constitent
+                    methodology to apply to any component, whether font size or hero image size.</p>
+
+                  <p>"Two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the
+                    larger of the two quantities. The figure below illustrates the geometric relationship."</p>
+
+                  <h2>Golden Ratio</h2>
+                  <p></p>Putting this into practice with font sizes, 16px is the body font size, so will be the
+                  'shortest
+                  side', then 26px would need to be the 'longest' to keep them in the golden ratio. The sum of these two
+                  sizes is 42px.</p>
+
+                  <p><img class="img-fluid" src="img/golden-ratio.jpg"></p>
+
+                  <p>The hero image height has been chosen by taking the button height size and multiplying by 15. This
+                    forms the largest size in the layout ratio. The smallest size is then calculated using the golden
+                    ratio, which is 390px. This is the height of each call to action section.</p>
+
+                  <p>For more information on the golden ratio, please visit https://en.wikipedia.org/wiki/Golden_ratio
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Unified styling of Multi-Tenancy product -->
@@ -166,7 +315,7 @@
 
               <div class="col-md-3 align-self-center">
 
-                <div class="img_container"
+                <div class="img-container"
                   style="background: url(https://unsplash.com/photos/7JX0-bfiuxQ/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTF8fHBhdHRlcm58ZW58MHx8fHwxNjU4MTc3NjE5&force=true&w=640);">
                 </div>
 
@@ -174,8 +323,10 @@
 
               <div class="col-md-9">
 
-                <h4 class="title"><a href="golden-ratio" class="font-weight-bold">Unified styling for multi tenancy product</a></h4>
-                <p class="description">Unifying the styling of five different applications across 4 different languages.</p>
+                <h2 class="title"><a href="golden-ratio" class="font-weight-bold">Unified styling for multi tenancy
+                    product</a></h2>
+                <p class="description">Unifying the styling of five different applications across 4 different languages.
+                </p>
 
               </div>
 
@@ -190,72 +341,34 @@
 
     </div>
 
-    <!-- About me -->
-
-    <div id="about-me" class="pt-5 pb-5">
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-12">
-
-            <h2 class="mb-3 text-center title font-weight-bold"> About me </h2>
-
-            <div class="divider-white"></div>
-
-          </div>
-
-          <div class="col-md-6 d-flex justify-content-center p-0 mt-5">
-
-            <div class="img_container_large" style="background: url(img/me.jpg);">
-
-            </div>
-
-          </div>
-
-          <div class="col-md-6 justify-content-center align-self-center mt-5">
-
-            <p> I'm Daniel Wadman, 3+ years experience in front-end development, accessibility audits, ux improvements and
-              web design, 10+ years experience being part of various web teams</p>
-
-            <p> I have a 2.1 in multimedia production techonology from Plymouth University and up unitl recently was
-              working for Webbased Ltd as a front end developer.</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- Contact -->
+    <!-- Contact me -->
 
     <div id="contact" class="pt-5 pb-5">
 
       <div class="container">
 
-        <div class="row">
+        <div class="row p-3">
 
           <div class="col-md-12">
 
-            <h2 class="mb-3 text-center title font-weight-bold"> Contact </h2>
+            <h1 class="mb-3 text-center title font-weight-bold"> Get in touch </h1>
 
-            <div class="divider-white"></div>
-
-          </div>
-
-          <div class="col-md-6 d-flex justify-content-center align-self-center p-0 mt-5">
-
-            <a href="mailto:email@example.com"><h4> <i class="fa-solid fa-at"></i> danwadman@gmail.com</h4</a>
+            <div class="divider"></div>
 
           </div>
 
-          <div class="col-md-6 d-flex justify-content-center align-self-center p-0 mt-5">
+          <div class="col-md-6 d-flex justify-content-lg-end justify-content-center align-self-center p-3 mt-5">
 
-            <a href="https://github.com/danwadman"><h4><i class="fa-brands fa-github"></i> github.com/danwadman</h4></a>
+            <a href="mailto:email@example.com" title="Email me">
+              <h2> <i class="fa-solid fa-at"></i> danwadman@gmail.com</h2< /a>
+
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-lg-start justify-content-center align-self-center p-3 mt-5">
+
+            <a href="https://github.com/danwadman" title="My Github page">
+              <h2><i class="fa-brands fa-github"></i> github.com/danwadman</h2>
+            </a>
 
           </div>
 
