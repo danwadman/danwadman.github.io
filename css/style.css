@@ -16,8 +16,12 @@ body {
   font-family: monospace;
 }
 
+#skillset {
+  margin-top: -200px;
+}
+
 #portfolio {
-  background-color: #f8f8f8;
+  background-color: #ececec;
 }
 
 #contact {
@@ -28,6 +32,7 @@ body {
   background-color: #00818F;
   color: #ffffff;
   position: relative;
+  padding-bottom: 200px;
 }
 
 .grey {
@@ -93,8 +98,18 @@ h1:focus-visible {
 
 .panel {
   background-color: #ffffff;
-  -webkit-box-shadow: 0 1px 1px #ebebeb;
-  box-shadow: 0 1px 1px #ebebeb;
+  -webkit-box-shadow: 0 0px 30px #dedede;
+  box-shadow: 0 0px 30px #dedede;
+  padding: 1.5rem;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.panel-low-drop {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0px 2px #dedede;
+  box-shadow: 0 0px 2px #dedede;
   padding: 1.5rem;
   border-radius: 5px;
   overflow: hidden;
