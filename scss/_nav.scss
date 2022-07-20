@@ -11,9 +11,15 @@
 }
 
 nav {
-    background: #f8f8f8 !important;
     position: sticky;
     transition: height .15s linear, width .15s linear, max-height .15s linear, padding .15s linear;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999999999999999999;
 }
 
 .fa-search,

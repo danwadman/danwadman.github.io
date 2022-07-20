@@ -14,7 +14,7 @@ body {
     background-color: #f8f8f8;
     font-size: 16px !important;
     color: #000000 !important;
-    font-family: 'Lato', sans-serif;
+    font-family: monospace;
 }
 
 #portfolio {
@@ -28,6 +28,7 @@ body {
 #about-me {
     background-color: #00818F;
     color: #ffffff;
+    position: relative;
 }
 
 .grey {
@@ -129,7 +130,8 @@ h1:focus-visible {
     margin: 0 auto;
 }
 
-.fa-github, .fa-at {
+.fa-github,
+.fa-at {
     color: #ffffff
 }
 
@@ -138,21 +140,28 @@ h1:focus-visible {
     height: 100vh;
     margin: 0;
     padding: 0;
-    max-width: none; 
-  }
-  
-  .modal.modal-fullscreen .modal-content {
+    max-width: none;
+}
+
+.modal.modal-fullscreen .modal-content {
     height: auto;
     height: 100vh;
     border-radius: 0;
-    border: none; 
-  }
-  
-  .modal.modal-fullscreen .modal-body {
+    border: none;
+}
+
+.modal.modal-fullscreen .modal-body {
     overflow-y: auto;
     color: #000000;
-  }
+}
 
-  .hero {
-    position: absolute;
-  }
+.hero-me {
+    background-size: contain !important;
+    margin-top: 100px;
+    height: 400px;
+    background-repeat: repeat !important;
+}
+
+.hero {
+    margin-top:-450px;
+}
