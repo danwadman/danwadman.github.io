@@ -172,7 +172,7 @@ h1:focus-visible {
 .hero-me {
   background-size: contain !important;
   height: 375px;
-  background-repeat: repeat !important;
+  background-repeat: no-repeat !important;
 }
 
 .hero {
