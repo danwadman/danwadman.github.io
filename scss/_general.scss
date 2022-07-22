@@ -17,6 +17,10 @@ body {
     font-family: monospace;
 }
 
+a:hover, a:focus-visible {
+    color: #0067d6;
+}
+
 #skillset {
     margin-top: -200px;
 }
@@ -36,15 +40,6 @@ body {
     padding-bottom: 200px;
 }
 
-.grey {
-    color: #999999;
-    font-weight: bold;
-}
-
-h1:focus-visible {
-    outline: none;
-}
-
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -58,11 +53,6 @@ h1:focus-visible {
 
 ::-webkit-scrollbar-track {
     background: transparent;
-}
-
-.section-inner {
-    max-width: 1400px !important;
-    width: calc(100% - 4rem) !important;
 }
 
 #page-content-wrapper {
@@ -116,7 +106,6 @@ h1:focus-visible {
     overflow: hidden;
     transition: 0.5s;
 }
-
 
 .title {
     font-size: 26px;
@@ -179,7 +168,7 @@ h1:focus-visible {
 }
 
 .hero {
-    margin-top:-450px;
+    margin-top:-465px;
 }
 
 .list-style-type-none {
