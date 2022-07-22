@@ -1,6 +1,11 @@
 /*
-    Button Styles
+    Link Styles
 */
+
+a:hover, a:focus-visible {
+    color: #0067d6;
+    outline: 2px solid black
+}
 
 .btn {
     border-radius: 3px !important;
