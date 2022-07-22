@@ -2,7 +2,11 @@
     Link Styles
 */
 
-a:hover, a:focus-visible {
+a:hover {
+    color: #0067d6;
+}
+
+a:focus-visible {
     color: #0067d6;
     outline: 2px solid black
 }
@@ -23,6 +27,10 @@ a:hover, a:focus-visible {
     color: #ffffff;
 }
 
+.btn-primary:focus-visible {
+    outline: 2px solid black
+}
+
 .btn-secondary {
     background-color: #E3E4E5;
     color: #000000;
@@ -33,3 +41,6 @@ a:hover, a:focus-visible {
     color: #000000;
 }
 
+.btn-secondary:focus-visible {
+    outline: 2px solid black
+    }
