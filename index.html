@@ -480,9 +480,9 @@
 
     <div id="contact" class="pt-5 pb-5">
 
-      <div class="container">
+      <div class="container-fluid">
 
-        <div class="row p-3">
+        <div class="row d-flex justify-content-center p-3">
 
           <div class="col-md-12">
 
@@ -492,18 +492,26 @@
 
           </div>
 
-          <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-self-center p-3 mt-5">
+          <div class="col-lg-3 d-flex justify-content-center align-self-center p-3 mt-5">
 
             <a href="mailto:email@example.com" title="Email me">
-              <h2><i class="fa-solid fa-at mr-3"></i>danwadman@gmail.com</h2>
+              <h2><i class="fa-solid fa-at mr-3""></i>danwadman@gmail.com</h2>
             </a>
 
           </div>
 
-          <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center align-self-center p-3 mt-5">
+          <div class="col-lg-3 d-flex justify-content-center align-self-center p-3 mt-5">
 
             <a href="https://github.com/danwadman" title="My Github page">
-              <h2><i class="fa-brands fa-github mr-3"></i>github.com/danwadman</h2>
+              <h2><i class="fa-brands fa-github mr-3""></i>github.com/danwadman</h2>
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 d-flex justify-content-center align-self-center p-3 mt-5">
+
+            <a href="docs/daniel-wadman-cv.docx" title="My CV">
+              <h2><i class="fa-solid fa-file-arrow-down mr-3"></i></i>My CV</h2>
             </a>
 
           </div>
@@ -526,8 +534,8 @@
 
       <div class="row">
 
-        <div id="app-2" class="col-md-12">
-          © <span v-bind:title="message">2022</span> Daniel Wadman
+        <div id="date" class="col-md-12">
+          © <span v-bind:title="date">{{ year }}</span> Daniel Wadman
 
         </div>
 
@@ -550,10 +558,11 @@
   <!-- Vue Scripts -->
   <script>
 
-    var app2 = new Vue({
-      el: '#app-2',
+    var dateapp = new Vue({
+      el: '#date',
       data: {
-        message: new Date().toLocaleString()
+        date: new Date().toLocaleString(),
+        year: new Date().getFullYear()
       }
     })
 
