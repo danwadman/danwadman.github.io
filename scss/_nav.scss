@@ -8,3 +8,49 @@ nav {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000 !important;
+}
+
+#backtotop {
+    display: none;
+    float: right;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    z-index: 1;
+    cursor: pointer;
+    width: 36px;
+    height: 38px;
+    background-color: #00818F;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+/* Slide hover */
+.nav-item {
+	text-decoration:none;
+	display: inline-block;
+	color:#F89C27;
+}
+
+/* add a empty string after the elment with class .slide-left-right */
+.nav-item:after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+	/* .5 seonds for changes to the width and background-	color */
+	
+	-webkit-transition: width .5s ease, background-color .5s ease; /* Chrome and Safari */
+	-moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
+}
+	/* Change the width and background on hover, aka sliding out */
+
+.nav-item:hover:after {
+	width: 100%;
+	background: #F89C27;
+}
