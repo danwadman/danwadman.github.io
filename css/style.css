@@ -15,6 +15,24 @@ body {
   font-family: monospace;
 }
 
+h1 {
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
+
 #skillset {
   margin-top: -200px;
 }
@@ -102,17 +120,27 @@ body {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #ffffff;
   text-align: left;
   font-weight: 400;
 }
+@media (max-width: 768px) {
+  .title {
+    font-size: 1rem;
+  }
+}
 
 .title-black {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #000000;
   text-align: left;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .title-black {
+    font-size: 1rem;
+  }
 }
 
 .divider {
@@ -159,6 +187,13 @@ body {
   background-size: contain !important;
   height: 375px;
   background-repeat: no-repeat !important;
+  background-image: url(../img/hero-me-2.jpg);
+}
+@media (max-width: 768px) {
+  .hero-me {
+    height: 275px;
+    background-position-x: center;
+  }
 }
 
 .hero {
@@ -179,6 +214,11 @@ body {
   text-align: center;
   font-size: 2rem;
 }
+@media (max-width: 768px) {
+  #contact a {
+    font-size: 1rem;
+  }
+}
 
 /* Nav */
 nav {
@@ -192,6 +232,10 @@ nav {
 
 .navbar-light .navbar-nav .nav-link {
   color: #000000 !important;
+}
+
+.navbar-brand {
+  margin-right: 0px !important;
 }
 
 #backtotop {

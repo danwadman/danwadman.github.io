@@ -2,11 +2,15 @@
     General Styles
 */
 
-@mixin centercontacts {
+@mixin center-contacts {
     white-space: break-spaces;
     display: flex;
     text-align: center;
     font-size: 2rem;
+}
+
+@mixin for-mobile {
+    @media (max-width: 768px) { @content; }
 }
 
 html {
@@ -21,6 +25,22 @@ body {
     background-color: #f8f8f8;
     color: #000000 !important;
     font-family: monospace;
+}
+
+h1 {
+    font-size: 3rem;
+
+    @include for-mobile {    
+        font-size: 2rem; 
+     }
+}
+
+h2 {
+    font-size: 2rem;
+
+    @include for-mobile {    
+        font-size: 1rem; 
+     }
 }
 
 #skillset {
@@ -110,17 +130,25 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #ffffff;
     text-align: left;
     font-weight: 400;
+
+    @include for-mobile {    
+        font-size: 1rem; 
+     }
 }
 
 .title-black {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #000000;
     text-align: left;
     font-weight: 400;
+
+    @include for-mobile {    
+        font-size: 1rem; 
+     }
 }
 
 .divider {
@@ -167,6 +195,12 @@ body {
     background-size: contain !important;
     height: 375px;
     background-repeat: no-repeat !important;
+    background-image: url(../img/hero-me-2.jpg);
+
+    @include for-mobile {    
+        height: 275px;
+        background-position-x: center;
+     }
 }
 
 .hero {
@@ -183,5 +217,9 @@ body {
 
 
 #contact a {
-    @include centercontacts;
+    @include center-contacts;
+
+    @include for-mobile {    
+        font-size: 1rem; 
+     }
 }
