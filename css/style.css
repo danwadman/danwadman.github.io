@@ -256,8 +256,8 @@ nav {
   display: none;
   float: right;
   position: fixed;
-  bottom: 20px;
-  right: 100px;
+  bottom: 5%;
+  right: 5%;
   z-index: 1;
   cursor: pointer;
   width: 36px;
