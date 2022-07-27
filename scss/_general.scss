@@ -100,6 +100,18 @@ h2 {
     border-radius: 25px;
 }
 
+.golden {
+    background: url(../img/philippe-d-uxnWliBKBkg-unsplash.jpg);
+}
+
+.wcag {
+    background: url(../img/sigmund-HE1zW44Zm_Y-unsplash.jpg);
+}
+
+.unified {
+    background: url(../img/jj-ying-7JX0-bfiuxQ-unsplash.jpg);
+}
+
 .img-container-large {
     height: 200px;
     width: 200px;
@@ -108,6 +120,7 @@ h2 {
     background-size: cover !important;
     background-position: center center !important;
     filter: saturate(0.5);
+    background: url(../img/me.jpg);
 }
 
 .panel {
