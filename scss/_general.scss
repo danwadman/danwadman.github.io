@@ -2,6 +2,13 @@
     General Styles
 */
 
+@mixin centercontacts {
+    white-space: break-spaces;
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+}
+
 html {
     position: relative;
     height: 100%;
@@ -12,7 +19,6 @@ html {
 body {
     height: 100%;
     background-color: #f8f8f8;
-    font-size: 16px !important;
     color: #000000 !important;
     font-family: monospace;
 }
@@ -104,14 +110,14 @@ body {
 }
 
 .title {
-    font-size: 26px;
+    font-size: 2rem;
     color: #ffffff;
     text-align: left;
     font-weight: 400;
 }
 
 .title-black {
-    font-size: 26px;
+    font-size: 2rem;
     color: #000000;
     text-align: left;
     font-weight: 400;
@@ -173,4 +179,9 @@ body {
 
 .img-border {
     border: 1px solid lightgrey;
+}
+
+
+#contact a {
+    @include centercontacts;
 }
