@@ -275,17 +275,22 @@ nav {
 
 #backtotop {
   display: none;
-  float: right;
   position: fixed;
   bottom: 5%;
   right: 5%;
   z-index: 1;
   cursor: pointer;
-  width: 36px;
-  height: 38px;
+  width: 48px;
+  height: 48px;
   background-color: #00818F;
   border-radius: 5px;
-  padding: 12px;
+  color: #ffffff;
+}
+
+.backtotopstyling {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Slide hover */
@@ -325,7 +330,17 @@ a:hover {
 
 a:focus-visible {
   color: #0067d6;
-  outline: 2px solid black;
+  outline: 2px solid #000000;
+}
+
+#contact a:focus-visible, #backtotop:focus-visible {
+  color: #0067d6;
+  outline: 2px solid #ffffff;
+}
+
+#backtotop:focus-visible {
+  color: #ffffff;
+  outline: 2px solid #ffffff;
 }
 
 .btn {
@@ -345,7 +360,7 @@ a:focus-visible {
 }
 
 .btn-primary:focus-visible {
-  outline: 2px solid black;
+  outline: 2px solid #000000;
 }
 
 .btn-secondary {
@@ -359,7 +374,7 @@ a:focus-visible {
 }
 
 .btn-secondary:focus-visible {
-  outline: 2px solid black;
+  outline: 2px solid #000000;
 }
 
 canvas {

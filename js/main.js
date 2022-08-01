@@ -8,9 +8,9 @@
 
   function scrollFunction() {
     if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-      document.getElementById("backtotop").style.display = "block";
+      $( "#backtotop" ).addClass( "backtotopstyling" );
     } else {
-      document.getElementById("backtotop").style.display = "none";
+      $( "#backtotop" ).removeClass( "backtotopstyling" );
     }
   }
 
