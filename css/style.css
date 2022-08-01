@@ -324,6 +324,10 @@ nav {
 /*
     Link Styles
 */
+a {
+  color: #0071EB;
+}
+
 a:hover {
   color: #0067d6;
 }
