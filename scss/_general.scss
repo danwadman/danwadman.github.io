@@ -205,7 +205,7 @@ h2 {
 .fa-at,
 .fa-file-pdf,
 .fa-file-word {
-    color: #ffffff
+    color: #0071EB;
 }
 
 .modal.modal-fullscreen .modal-dialog {
@@ -254,6 +254,8 @@ h2 {
 
 
 #contact a {
+    color: #ffffff !important;
+
     @include center-contacts;
 
     @include for-mobile {    
