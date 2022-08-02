@@ -194,7 +194,8 @@ h2 {
 
 .fa-github,
 .fa-at,
-.fa-file-arrow-down {
+.fa-file-pdf,
+.fa-file-word {
   color: #ffffff;
 }
 
@@ -253,6 +254,10 @@ h2 {
   #contact a {
     font-size: 1rem;
   }
+}
+
+.text-small {
+  font-size: 1rem;
 }
 
 /* Nav */
