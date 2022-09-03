@@ -282,7 +282,7 @@ a:hover {
 
 a:focus-visible {
   color: #0067d6;
-  outline: 2px solid #00818F; }
+  outline: 2px solid #000000; }
 
 #contact a:focus-visible, #backtotop:focus-visible {
   color: #0067d6;
@@ -306,7 +306,7 @@ a:focus-visible {
   color: #ffffff; }
 
 .btn-primary:focus-visible {
-  outline: 2px solid #00818F; }
+  outline: 2px solid #000000; }
 
 .btn-secondary {
   background-color: #E3E4E5;
@@ -317,7 +317,7 @@ a:focus-visible {
   color: #000000; }
 
 .btn-secondary:focus-visible {
-  outline: 2px solid #00818F; }
+  outline: 2px solid #000000; }
 
 canvas {
   display: block; }
@@ -349,4 +349,4 @@ footer {
   color: #ffffff;
   align-items: center; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stylesheet.css.map */
