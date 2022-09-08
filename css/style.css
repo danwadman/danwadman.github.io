@@ -48,18 +48,32 @@ h2 {
 }
 
 #portfolio {
-  background-color: #ececec;
+  background-color: gainsboro;
+  border-radius: 5px;
 }
 
 #contact {
-  background-color: #140F2D;
+  background-color: midnightblue;
 }
 
 #about-me {
-  background-color: #00818F;
+  background-color: teal;
   color: #ffffff;
   position: relative;
   padding-bottom: 200px;
+  border-radius: 5px;
+}
+
+.development-box {
+  background-color: antiquewhite;
+}
+
+.design-box {
+  background-color: antiquewhite;
+}
+
+.accessiblity-box {
+  background-color: antiquewhite;
 }
 
 ::-webkit-scrollbar {
@@ -237,7 +251,7 @@ h2 {
 }
 
 .hero {
-  margin-top: -465px;
+  margin-top: -475px;
 }
 
 .list-style-type-none {
@@ -422,7 +436,7 @@ _____________________________ */
 footer {
   display: flex;
   text-align: center;
-  background-color: #140F2D;
+  background-color: midnightblue;
   color: #ffffff;
   align-items: center;
 }
