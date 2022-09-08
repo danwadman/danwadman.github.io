@@ -52,10 +52,6 @@ h2 {
   border-radius: 5px;
 }
 
-#contact {
-  background-color: midnightblue;
-}
-
 #about-me {
   background-color: teal;
   color: #ffffff;
@@ -436,7 +432,7 @@ _____________________________ */
 footer {
   display: flex;
   text-align: center;
-  background-color: midnightblue;
+  background-color: black;
   color: #ffffff;
   align-items: center;
 }
