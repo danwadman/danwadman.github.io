@@ -247,6 +247,8 @@ h2 {
 
 .hero {
   margin-top: -475px;
+  height: 100%;
+  display: flex;
 }
 
 .list-style-type-none {
