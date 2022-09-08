@@ -58,8 +58,15 @@ h2 {
 }
 
 .portfolio-text {
+  position: absolute;
   background-color: #ececec;
   border-bottom-right-radius: 95px;
+  transition: all 0.1s ease;
+}
+
+#portfolio:hover .portfolio-text {
+  padding: 30px !important;
+  transition: all 0.1s ease;
 }
 
 #about-me {
@@ -71,8 +78,15 @@ h2 {
 }
 
 .about-me-text {
+  position: absolute;
   background-color: cadetblue;
   border-bottom-right-radius: 95px;
+  transition: all 0.1s ease;
+}
+
+#about-me:hover .about-me-text {
+  padding: 30px !important;
+  transition: all 0.1s ease;
 }
 
 .development-box {
@@ -365,11 +379,11 @@ nav {
     Link Styles
 */
 a {
-  color: #0071EB;
+  color: #000000;
 }
 
 a:hover {
-  color: #0067d6;
+  color: #ffffff;
 }
 
 a:focus-visible {
@@ -377,7 +391,8 @@ a:focus-visible {
   outline: 2px solid #00818F;
 }
 
-#contact a:focus-visible, #backtotop:focus-visible {
+#contact a:focus-visible,
+#backtotop:focus-visible {
   color: #0067d6;
   outline: 2px solid #ffffff;
 }
@@ -398,7 +413,8 @@ a:focus-visible {
   color: #fff;
 }
 
-.btn-primary:hover, .btn-primary:focus-visible {
+.btn-primary:hover,
+.btn-primary:focus-visible {
   background-color: #005660;
   color: #ffffff;
 }
@@ -412,13 +428,132 @@ a:focus-visible {
   color: #000000;
 }
 
-.btn-secondary:hover, .btn-secondary:focus-visible {
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
   background-color: #cacaca;
   color: #000000;
 }
 
 .btn-secondary:focus-visible {
   outline: 2px solid #00818F;
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInFromNoneIE {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInFromNone {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.development-box, .design-box, .accessibility-box {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+a:focus-within {
+  border: 2px solid gray;
+}
+
+.development-box:before, .design-box:before, .accessibility-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.development-box svg, .design-box svg, .accessibility-box svg {
+  position: relative;
+  top: 0px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #fff;
+  stroke-width: 3;
+  transform: translateX(0);
+  transition: all 0.1s ease;
+  visibility: hidden;
+}
+
+.development-box:hover:before {
+  width: 100%;
+  background: #F7B501;
+  cursor: pointer;
+}
+
+.design-box:hover:before {
+  width: 100%;
+  background: #6C1E20;
+  cursor: pointer;
+}
+
+.accessibility-box:hover:before {
+  width: 100%;
+  background: #008080;
+  cursor: pointer;
+}
+
+.development-box:hover svg, .design-box:hover svg, .accessibility-box:hover svg {
+  visibility: visible;
+  transform: translateX(0);
+  animation-duration: 0.5s;
+  animation-name: fadeInFromNone;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fadeInFromNone;
+  -webkit-animation-fill-mode: forwards;
+  -ms-animation-duration: 0.5s;
+  -ms-animation-name: fadeInFromNoneIE;
+  -ms-animation-fill-mode: forwards;
+}
+
+.development-box:active, .design-box:active, .accessibility-box:active {
+  transform: scale(0.96);
+}
+
+.development-box:hover h2 {
+  transition: all 0.4s ease;
+  transform: translateX(-10px);
+  display: inline-block;
+  color: #000000;
+  cursor: pointer;
+}
+
+.design-box:hover h2, .accessibility-box:hover h2 {
+  transition: all 0.4s ease;
+  transform: translateX(-10px);
+  display: inline-block;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 canvas {

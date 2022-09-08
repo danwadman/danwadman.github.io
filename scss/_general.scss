@@ -69,8 +69,15 @@ h2 {
 }
 
 .portfolio-text {
+    position: absolute;
     background-color: #ececec;;
     border-bottom-right-radius: 95px;
+    transition: all 0.1s ease;
+}
+
+#portfolio:hover .portfolio-text {
+    padding: 30px !important;
+    transition: all 0.1s ease;
 }
 
 #about-me {
@@ -82,8 +89,15 @@ h2 {
 }
 
 .about-me-text {
+    position: absolute;
     background-color: cadetblue;
     border-bottom-right-radius: 95px;
+    transition: all 0.1s ease;
+}
+
+#about-me:hover .about-me-text {
+    padding: 30px !important;
+    transition: all 0.1s ease;
 }
 
 .development-box {
