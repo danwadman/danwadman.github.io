@@ -65,7 +65,12 @@ h2 {
 
 #portfolio {
     background-color: gainsboro;
-    border-radius: 5px;
+    border-radius: 25px;
+}
+
+.portfolio-text {
+    background-color: #ececec;;
+    border-bottom-right-radius: 95px;
 }
 
 #about-me {
@@ -73,7 +78,12 @@ h2 {
     color: #ffffff;
     position: relative;
     padding-bottom: 200px;
-    border-radius: 5px;
+    border-radius: 25px;
+}
+
+.about-me-text {
+    background-color: cadetblue;
+    border-bottom-right-radius: 95px;
 }
 
 .development-box {
@@ -168,7 +178,7 @@ h2 {
     -webkit-box-shadow: 0 0px 30px #dedede;
     box-shadow: 0 0px 30px #dedede;
     padding: 1.5rem;
-    border-radius: 5px;
+    border-radius: 25px;
     overflow: hidden;
     transition: 0.5s;
 }
@@ -178,7 +188,7 @@ h2 {
     -webkit-box-shadow: 0 0px 2px #dedede;
     box-shadow: 0 0px 2px #dedede;
     padding: 1.5rem;
-    border-radius: 5px;
+    border-radius: 25px;
     overflow: hidden;
     transition: 0.5s;
 }
@@ -285,4 +295,8 @@ h2 {
 
 .text-small {
     font-size: 1rem; 
+}
+
+.text-black {
+    color: #000000;
 }
