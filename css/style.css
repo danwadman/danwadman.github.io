@@ -44,7 +44,7 @@ h2 {
 }
 
 #skillset {
-  margin-top: -200px;
+  margin-top: -275px;
 }
 
 #portfolio {
@@ -61,15 +61,15 @@ h2 {
 }
 
 .development-box {
-  background-color: antiquewhite;
+  border: 2px solid #F7B501 !important;
 }
 
 .design-box {
-  background-color: antiquewhite;
+  border: 2px solid #6C1E20 !important;
 }
 
-.accessiblity-box {
-  background-color: antiquewhite;
+.accessibility-box {
+  border: 2px solid #008080 !important;
 }
 
 ::-webkit-scrollbar {
@@ -95,7 +95,6 @@ h2 {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  padding: 80px 20px 80px 20px;
   border-left: 0px;
   background: #f8f8f8;
 }
