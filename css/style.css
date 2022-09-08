@@ -28,7 +28,7 @@ li {
 h1 {
   font-size: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   h1 {
     font-size: 2rem;
   }
@@ -37,10 +37,15 @@ h1 {
 h2 {
   font-size: 2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   h2 {
     font-size: 1rem;
   }
+}
+
+.logo {
+  width: 65px;
+  margin-top: -10px;
 }
 
 #skillset {
@@ -173,7 +178,7 @@ h2 {
   text-align: left;
   font-weight: 400;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .title {
     font-size: 1rem;
   }
@@ -185,7 +190,7 @@ h2 {
   text-align: left;
   font-weight: 400;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .title-black {
     font-size: 1rem;
   }
@@ -238,7 +243,7 @@ h2 {
   background-repeat: no-repeat !important;
   background-image: url(../img/hero-me-2.jpg);
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .hero-me {
     height: 275px;
     background-position-x: center;
@@ -266,7 +271,7 @@ h2 {
   text-align: center;
   font-size: 2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #contact a {
     font-size: 1rem;
   }

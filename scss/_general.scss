@@ -12,7 +12,7 @@
 }
 
 @mixin for-mobile {
-    @media (max-width: 768px) { @content; }
+    @media (max-width: 992px) { @content; }
 }
 
 html {
@@ -52,6 +52,11 @@ h2 {
     @include for-mobile {    
         font-size: 1rem; 
      }
+}
+
+.logo {
+    width: 65px;
+    margin-top: -10px;
 }
 
 #skillset {
