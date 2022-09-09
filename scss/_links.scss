@@ -5,13 +5,14 @@ a {
     color: #000000;
 }
 
-a:hover {
-    color: #ffffff;
-}
-
 a:focus-visible {
     color: #0067d6;
     outline: 2px solid #00818F;
+}
+
+a:hover {
+    color: #0067d6 !important;
+    text-decoration: underline;
 }
 
 #contact a:focus-visible,
