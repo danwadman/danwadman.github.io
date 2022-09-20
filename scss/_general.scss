@@ -76,7 +76,7 @@ h2 {
 }
 
 #portfolio:hover .portfolio-text {
-    padding: 30px !important;
+    padding: 20px !important;
     transition: all 0.1s ease;
 }
 
@@ -96,7 +96,7 @@ h2 {
 }
 
 #about-me:hover .about-me-text {
-    padding: 30px !important;
+    padding: 20px !important;
     transition: all 0.1s ease;
 }
 
@@ -178,6 +178,10 @@ h2 {
 
 .tso {
     background: url(../img/tso-home.jpg);
+}
+
+.cpd {
+    background: url(../img/new-site.jpg);
 }
 
 .img-container-large {
