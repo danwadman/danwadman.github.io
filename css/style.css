@@ -65,7 +65,7 @@ h2 {
 }
 
 #portfolio:hover .portfolio-text {
-  padding: 20px !important;
+  padding: 25px !important;
   transition: all 0.1s ease;
 }
 
@@ -85,7 +85,7 @@ h2 {
 }
 
 #about-me:hover .about-me-text {
-  padding: 20px !important;
+  padding: 32px 32px 26px 31px !important;
   transition: all 0.1s ease;
 }
 
@@ -98,7 +98,7 @@ h2 {
 }
 
 .accessibility-box {
-  border: 2px solid #008080 !important;
+  border: 2px solid teal !important;
 }
 
 ::-webkit-scrollbar {
@@ -333,7 +333,7 @@ nav {
 
 /* accessibility */
 .skip-to-content-link {
-  background: #00818F;
+  background: #008080;
   font-weight: bold;
   color: #ffffff !important;
   left: 50%;
@@ -359,7 +359,7 @@ nav {
   cursor: pointer;
   width: 48px;
   height: 48px;
-  background-color: #00818F;
+  background-color: #008080;
   border-radius: 5px;
   color: #ffffff;
 }
@@ -444,7 +444,7 @@ a:hover {
 }
 
 .btn-primary:focus-visible {
-  outline: 2px solid #00818F;
+  outline: 2px solid #008080;
 }
 
 .btn-secondary {
@@ -459,7 +459,7 @@ a:hover {
 }
 
 .btn-secondary:focus-visible {
-  outline: 2px solid #00818F;
+  outline: 2px solid #008080;
 }
 
 @-webkit-keyframes fadeInFromNone {
@@ -534,16 +534,28 @@ a:focus-within {
   cursor: pointer;
 }
 
+.fa-code {
+  color: #F7B501;
+}
+
 .design-box:hover:before {
   width: 100%;
   background: #6C1E20;
   cursor: pointer;
 }
 
+.fa-palette {
+  color: #6C1E20;
+}
+
 .accessibility-box:hover:before {
   width: 100%;
   background: #008080;
   cursor: pointer;
+}
+
+.fa-universal-access {
+  color: #008080;
 }
 
 .development-box:hover svg, .design-box:hover svg, .accessibility-box:hover svg {

@@ -1,5 +1,9 @@
 /* Nav */
 
+$green: #008080;
+$yellow: #F7B501;
+$red: #6C1E20;
+
 nav {
     transition: height .15s linear, width .15s linear, max-height .15s linear, padding .15s linear;
 }
@@ -16,7 +20,7 @@ nav {
 /* accessibility */
 
 .skip-to-content-link {
-    background: #00818F;
+    background: $green;
     font-weight: bold;
     color: #ffffff !important;
     left: 50%;
@@ -42,7 +46,7 @@ nav {
     cursor: pointer;
     width: 48px;
     height: 48px;
-    background-color: #00818F;
+    background-color: $green;
     border-radius: 5px;
     color: #ffffff;
 }

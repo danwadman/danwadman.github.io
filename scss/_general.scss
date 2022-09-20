@@ -4,6 +4,10 @@
     General Styles
 */
 
+$green: rgb(0, 128, 128);
+$yellow: #F7B501;
+$red: #6C1E20;
+
 @mixin center-contacts {
     white-space: break-spaces;
     display: flex;
@@ -76,12 +80,12 @@ h2 {
 }
 
 #portfolio:hover .portfolio-text {
-    padding: 20px !important;
+    padding: 25px !important;
     transition: all 0.1s ease;
 }
 
 #about-me {
-    background-color: teal;
+    background-color: $green;
     color: #ffffff;
     position: relative;
     padding-bottom: 200px;
@@ -96,20 +100,20 @@ h2 {
 }
 
 #about-me:hover .about-me-text {
-    padding: 20px !important;
+    padding: 32px 32px 26px 31px !important;
     transition: all 0.1s ease;
 }
 
 .development-box {
-    border: 2px solid #F7B501 !important;
+    border: 2px solid $yellow !important;
 }
 
 .design-box {
-    border: 2px solid #6C1E20 !important;
+    border: 2px solid $red !important;
 }
 
 .accessibility-box {
-    border: 2px solid #008080 !important;
+    border: 2px solid $green !important;
 }
 
 ::-webkit-scrollbar {
