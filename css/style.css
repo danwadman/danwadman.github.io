@@ -329,7 +329,7 @@ nav {
 
 @media (max-width: 385px) {
   .nav-link {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
 }
 
