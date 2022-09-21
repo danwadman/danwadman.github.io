@@ -4,6 +4,10 @@ $green: #008080;
 $yellow: #F7B501;
 $red: #6C1E20;
 
+@mixin for-tiny-mobile {
+    @media (max-width: 385px) { @content; }
+}
+
 nav {
     transition: height .15s linear, width .15s linear, max-height .15s linear, padding .15s linear;
 }
@@ -11,6 +15,12 @@ nav {
 .nav-item {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.nav-link {
+    @include for-tiny-mobile {    
+        font-size: 0.75rem; 
+     }
 }
 
 .navbar-brand {

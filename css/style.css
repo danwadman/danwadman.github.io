@@ -327,6 +327,12 @@ nav {
   padding-right: 10px;
 }
 
+@media (max-width: 385px) {
+  .nav-link {
+    font-size: 0.75rem;
+  }
+}
+
 .navbar-brand {
   margin-right: 0px !important;
 }
