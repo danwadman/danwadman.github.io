@@ -32,10 +32,6 @@ var Year = React.createClass({
 
 var hour = (new Date).getHours();
 
-import data from './local.json';
-
-
-
 React.render(
   React.createElement(Year),
   document.getElementById('date')
