@@ -1,3 +1,5 @@
+var hour = (new Date).getHours();
+
 var Morning = React.createClass({
   render: function() {
     return (
@@ -29,8 +31,6 @@ var Year = React.createClass({
     );
   }
 })
-
-var hour = (new Date).getHours();
 
 React.render(
   React.createElement(Year),
