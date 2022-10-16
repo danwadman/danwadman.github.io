@@ -161,6 +161,10 @@ h2 {
   background: url(../img/new-site.jpg);
 }
 
+.slider {
+  background: url(../img/slider-example.jpg);
+}
+
 .img-container-large {
   height: 200px;
   width: 200px;
@@ -396,7 +400,7 @@ nav {
     Link Styles
 */
 a {
-  color: #000000;
+  color: #0067d6;
 }
 
 a:focus-visible {
@@ -407,6 +411,10 @@ a:focus-visible {
 a:hover {
   color: #0067d6 !important;
   text-decoration: underline;
+}
+
+.hero a {
+  color: #000000;
 }
 
 #contact a:focus-visible,

@@ -30,7 +30,7 @@ var Year = React.createClass({
       <p>© Daniel Wadman {new Date().getFullYear()}</p>
     );
   }
-})
+});
 
 React.render(
   React.createElement(Year),
@@ -40,9 +40,4 @@ React.render(
 React.render(
   <Clock hour={hour} />,
   document.getElementById('clock')
-);
-
-React.render(
-  React.createElement(Year),
-  document.getElementById('date')
 );
