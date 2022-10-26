@@ -173,7 +173,7 @@ h2 {
   background-size: cover !important;
   background-position: center center !important;
   filter: saturate(0.5);
-  background: url(../img/me.jpg);
+  background: url(../img/me-cut-out.jpg);
 }
 
 .panel {
