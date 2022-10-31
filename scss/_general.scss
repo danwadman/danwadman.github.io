@@ -16,7 +16,9 @@ $red: #6C1E20;
 }
 
 @mixin for-mobile {
-    @media (max-width: 1200px) { @content; }
+    @media (max-width: 1200px) {
+        @content;
+    }
 }
 
 html {
@@ -45,17 +47,17 @@ li {
 h1 {
     font-size: 3rem;
 
-    @include for-mobile {    
-        font-size: 2rem; 
-     }
+    @include for-mobile {
+        font-size: 2rem;
+    }
 }
 
 h2 {
     font-size: 2rem;
 
-    @include for-mobile {    
-        font-size: 1rem; 
-     }
+    @include for-mobile {
+        font-size: 1rem;
+    }
 }
 
 .logo {
@@ -74,7 +76,8 @@ h2 {
 
 .portfolio-text {
     position: absolute;
-    background-color: #ececec;;
+    background-color: #ececec;
+    ;
     border-bottom-right-radius: 95px;
 }
 
@@ -221,9 +224,9 @@ h2 {
     text-align: left;
     font-weight: 400;
 
-    @include for-mobile {    
-        font-size: 1rem; 
-     }
+    @include for-mobile {
+        font-size: 1rem;
+    }
 }
 
 .title-black {
@@ -232,9 +235,9 @@ h2 {
     text-align: left;
     font-weight: 400;
 
-    @include for-mobile {    
-        font-size: 1rem; 
-     }
+    @include for-mobile {
+        font-size: 1rem;
+    }
 }
 
 .divider {
@@ -284,14 +287,14 @@ h2 {
     background-repeat: no-repeat !important;
     background-image: url(../img/hero-me-2.jpg);
 
-    @include for-mobile {    
+    @include for-mobile {
         height: 275px;
         background-position-x: center;
-     }
+    }
 }
 
 .hero {
-    margin-top:-475px;
+    margin-top: -475px;
     height: 100%;
     display: flex;
 }
@@ -310,13 +313,13 @@ h2 {
 
     @include center-contacts;
 
-    @include for-mobile {    
-        font-size: 1rem; 
-     }
+    @include for-mobile {
+        font-size: 1rem;
+    }
 }
 
 .text-small {
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 .text-black {
