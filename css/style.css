@@ -277,7 +277,9 @@ h2 {
 }
 
 .hero-divider {
-  margin-bottom: 3rem;
+  width: 3.5rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
 }
 
 .section-divider {
@@ -352,6 +354,9 @@ h2 {
   color: #ffffff !important;
   white-space: break-spaces;
   display: inline-flex;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -361,7 +366,6 @@ h2 {
   background: rgba(255, 255, 255, 0.02);
   padding: 0.9rem 1.2rem;
   border-radius: 999px;
-  min-width: 14rem;
   transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
@@ -398,10 +402,13 @@ h2 {
   display: flex;
   height: 100%;
   margin-top: -475px;
+  align-items: center;
 }
 
 .hero-container > .content-layout {
   width: 100%;
+  align-content: center;
+  justify-content: flex-start;
 }
 
 .content-layout {
@@ -420,26 +427,58 @@ h2 {
   flex: 0 0 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero-greeting {
+  margin: 0 0 0.5rem;
+  color: teal;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .hero-title {
-  margin-bottom: 1rem;
-  text-align: center;
+  margin: 0 0 0.75rem;
+  text-align: left;
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
   font-weight: 700;
 }
 
 .hero-tagline {
-  margin-bottom: 3rem;
-  text-align: center;
+  max-width: 42rem;
+  margin: 0 0 1.5rem;
+  text-align: left;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero-skills-label {
+  flex: 0 0 100%;
+  margin: 0 0 0.25rem;
+  color: #333333;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-feature-column {
-  flex: 1 1 18rem;
-  max-width: 22rem;
+  flex: 1 1 13rem;
+  max-width: 18rem;
   min-width: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .hero-feature-column > a {
@@ -507,7 +546,10 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  padding: 1rem 0.5rem;
+  width: calc(100% - 2.5rem);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 1rem 0;
   align-items: flex-start;
 }
 
@@ -520,12 +562,13 @@ h2 {
   align-items: center;
   justify-content: center;
   margin-top: 2.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .contact-form {
   width: 100%;
   max-width: 34rem;
+  box-sizing: border-box;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1.25rem;
@@ -550,6 +593,8 @@ h2 {
 .field-control {
   display: block;
   width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   padding: 0.9rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 0.875rem;
@@ -699,6 +744,12 @@ h2 {
   }
 }
 
+@media (max-width: 1199px) {
+  .contact-form .field-row {
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 992px) {
   .about-section {
     margin: 3rem;
@@ -714,6 +765,10 @@ h2 {
 
   .portfolio-section {
     margin: 3rem;
+  }
+
+  .contact-layout {
+    width: calc(100% - 8.5rem);
   }
 
   .portfolio-column {
@@ -734,6 +789,16 @@ h2 {
 }
 
 @media (max-width: 575px) {
+  .hero-container {
+    box-sizing: border-box;
+    margin-top: -605px;
+  }
+
+  .hero-feature-column {
+    flex-basis: 100%;
+    max-width: none;
+  }
+
   .field-row {
     flex-direction: column;
   }
@@ -861,6 +926,67 @@ a:focus-within {
   color: #000000;
 }
 
+.hero-actions a {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid #008080;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-actions a:focus-visible {
+  outline: 3px solid #111111;
+  outline-offset: 3px;
+}
+
+.hero-actions a:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.hero-actions .hero-primary-action,
+.hero-actions .hero-primary-action:hover {
+  background-color: #008080;
+  color: #ffffff !important;
+}
+
+.hero-actions .hero-secondary-action,
+.hero-actions .hero-secondary-action:hover {
+  border-color: #6C1E20;
+  background-color: #ffffff;
+  color: #6C1E20 !important;
+}
+
+.hero-actions .hero-secondary-action:hover {
+  background-color: #f7eeee;
+}
+
+.hero-feature-column > a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hero-feature-column > a:hover {
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+.hero-feature-column > a:focus-visible {
+  border-radius: 20px;
+  outline: 3px solid #111111;
+  outline-offset: 3px;
+}
+
+.hero-feature-column > a:focus-within {
+  border: 0;
+}
+
 #contact a:focus-visible,
 #backtotop:focus-visible {
   color: #0067d6;
@@ -878,9 +1004,9 @@ a:focus-within {
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 0.9rem 1rem;
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: 16px;
   background-color: #ffffff;
   box-shadow: 0 0 2px #dedede;
   text-align: center;
@@ -888,15 +1014,15 @@ a:focus-within {
 }
 
 .experience-card-development {
-  border: 2px solid #F7B501;
+  border: 1px solid #F7B501;
 }
 
 .experience-card-design {
-  border: 2px solid #6C1E20;
+  border: 1px solid #6C1E20;
 }
 
 .experience-card-accessibility {
-  border: 2px solid teal;
+  border: 1px solid teal;
 }
 
 .experience-card-development::before,
@@ -921,11 +1047,12 @@ a:focus-within {
 
 .experience-card-title {
   margin: 0;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
 .experience-card-content i {
-  margin-right: 1rem;
+  margin-right: 0.75rem;
 }
 
 .experience-card-development i {
@@ -1023,6 +1150,12 @@ canvas {
   height: 500px;
 }
 
+@media (max-width: 575px) {
+  .particles {
+    height: 630px;
+  }
+}
+
 #particles-js {
   width: 100%;
   height: 100%;
@@ -1054,6 +1187,7 @@ canvas {
 .footer-meta {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
