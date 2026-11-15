@@ -48,8 +48,9 @@ h2 {
   min-height: calc(100vh - 205px);
   padding: 20px;
   position: relative;
+  isolation: isolate;
   transition: all 0.5s ease;
-  background: #f8f8f8;
+  background: transparent;
 }
 
 .logo {
@@ -459,6 +460,8 @@ h2 {
 }
 
 .hero-actions {
+  width: 100%;
+  max-width: 37rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -511,7 +514,7 @@ h2 {
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 3rem;
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .portfolio-column {
@@ -890,12 +893,25 @@ nav {
   bottom: 5%;
   z-index: 1;
   display: none;
-  width: 48px;
-  height: 48px;
-  border-radius: 5px;
-  background-color: #008080;
-  color: #ffffff;
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  background-color: rgba(11, 11, 13, 0.94);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  color: #F7B501;
+  font-size: 1.25rem;
   cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#backtotop:hover {
+  transform: translateY(-3px);
+  border-color: #F7B501;
+  background-color: #F7B501;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.32);
+  color: #000000 !important;
+  text-decoration: none;
 }
 
 .backtotopstyling {
@@ -927,16 +943,24 @@ a:focus-within {
 }
 
 .hero-actions a {
-  display: inline-flex;
-  min-height: 3rem;
+  position: relative;
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 18rem;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 1.25rem;
-  border: 2px solid #008080;
-  border-radius: 999px;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px #dedede;
+  color: #000000;
+  font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .hero-actions a:focus-visible {
@@ -945,25 +969,68 @@ a:focus-within {
 }
 
 .hero-actions a:hover {
-  transform: translateY(-2px);
   text-decoration: none;
 }
 
-.hero-actions .hero-primary-action,
+.hero-actions a i {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.hero-actions .hero-primary-action {
+  border-color: #008080;
+}
+
+.hero-actions .hero-primary-action i {
+  color: #008080;
+}
+
+.hero-actions .hero-secondary-action {
+  border-color: #6C1E20;
+}
+
+.hero-actions .hero-secondary-action i {
+  color: #6C1E20;
+}
+
 .hero-actions .hero-primary-action:hover {
+  border-color: #008080;
   background-color: #008080;
   color: #ffffff !important;
 }
 
-.hero-actions .hero-secondary-action,
-.hero-actions .hero-secondary-action:hover {
-  border-color: #6C1E20;
-  background-color: #ffffff;
-  color: #6C1E20 !important;
+.hero-actions .hero-primary-action:hover i,
+.hero-actions .hero-secondary-action:hover i {
+  color: #ffffff;
 }
 
 .hero-actions .hero-secondary-action:hover {
-  background-color: #f7eeee;
+  border-color: #6C1E20;
+  background-color: #6C1E20;
+  color: #ffffff !important;
+}
+
+.hero-actions a:active {
+  transform: scale(0.96);
+}
+
+@media (max-width: 575px) {
+  .hero-actions a {
+    gap: 0.3rem;
+    padding: 0.7rem 0.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions a {
+    flex: none;
+    max-width: none;
+  }
 }
 
 .hero-feature-column > a {
@@ -994,8 +1061,9 @@ a:focus-within {
 }
 
 #backtotop:focus-visible {
-  color: #ffffff;
-  outline: 2px solid #ffffff;
+  color: #F7B501;
+  outline: 3px solid #F7B501;
+  outline-offset: 3px;
 }
 
 .experience-card-development,
@@ -1150,6 +1218,12 @@ canvas {
   height: 500px;
 }
 
+.particles::before {
+  display: block;
+  height: 100%;
+  content: '';
+}
+
 @media (max-width: 575px) {
   .particles {
     height: 630px;
@@ -1157,8 +1231,13 @@ canvas {
 }
 
 #particles-js {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  z-index: -1;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  transform: translateX(-50%);
   background-color: #f8f8f8;
   background-size: cover;
   background-position: 50% 50%;
@@ -1199,12 +1278,8 @@ canvas {
   font-size: 0.9rem;
 }
 
-.footer-date,
-.footer-tagline {
-  flex: 1 1 0;
+.footer-date {
+  flex: 1 1 100%;
   min-width: 0;
-}
-
-.footer-tagline {
-  text-align: right;
+  text-align: center;
 }

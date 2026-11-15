@@ -70,8 +70,9 @@ h2 {
     min-height: calc(100vh - 205px);
     padding: 20px;
     position: relative;
+    isolation: isolate;
     transition: all 0.5s ease;
-    background: #f8f8f8;
+    background: transparent;
 }
 
 .logo {

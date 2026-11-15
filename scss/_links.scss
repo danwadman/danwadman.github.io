@@ -25,16 +25,24 @@ a {
 }
 
 .hero-actions a {
-    display: inline-flex;
-    min-height: 3rem;
+    position: relative;
+    display: flex;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 18rem;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.25rem;
-    border: 2px solid $green;
-    border-radius: 999px;
+    gap: 0.75rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px #dedede;
+    color: #000000;
+    font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 
     &:focus-visible {
         outline: 3px solid #111111;
@@ -42,26 +50,69 @@ a {
     }
 
     &:hover {
-        transform: translateY(-2px);
         text-decoration: none;
+    }
+
+    i {
+        color: inherit;
+        transition: color 0.2s ease;
     }
 }
 
-.hero-actions .hero-primary-action,
+.hero-actions .hero-primary-action {
+    border-color: $green;
+
+    i {
+        color: $green;
+    }
+}
+
+.hero-actions .hero-secondary-action {
+    border-color: $red;
+
+    i {
+        color: $red;
+    }
+}
+
 .hero-actions .hero-primary-action:hover {
+    border-color: $green;
     background-color: $green;
     color: #ffffff !important;
 }
 
-.hero-actions .hero-secondary-action,
-.hero-actions .hero-secondary-action:hover {
-    border-color: $red;
-    background-color: #ffffff;
-    color: $red !important;
+.hero-actions .hero-primary-action:hover i,
+.hero-actions .hero-secondary-action:hover i {
+    color: #ffffff;
 }
 
 .hero-actions .hero-secondary-action:hover {
-    background-color: #f7eeee;
+    border-color: $red;
+    background-color: $red;
+    color: #ffffff !important;
+}
+
+.hero-actions a:active {
+    transform: scale(0.96);
+}
+
+@media (max-width: 575px) {
+    .hero-actions a {
+        gap: 0.3rem;
+        padding: 0.7rem 0.4rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions a {
+        flex: none;
+        max-width: none;
+    }
 }
 
 .hero-feature-column > a {
@@ -92,8 +143,9 @@ a {
 }
 
 #backtotop:focus-visible {
-    color: #ffffff;
-    outline: 2px solid #ffffff;
+    color: $yellow;
+    outline: 3px solid $yellow;
+    outline-offset: 3px;
 }
 
 @mixin experience-card($accent, $hover-text) {
