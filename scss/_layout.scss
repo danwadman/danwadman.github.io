@@ -5,6 +5,7 @@
 .site-container {
     width: 100%;
     max-width: 1140px;
+    box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
     padding-right: 0.75rem;
@@ -374,6 +375,16 @@
     .hero-container {
         box-sizing: border-box;
         margin-top: -605px;
+    }
+
+    .contact-layout {
+        row-gap: 0.75rem;
+    }
+
+    .contact-form-column,
+    .contact-link-column,
+    .contact-cv-column {
+        margin-top: 0.75rem;
     }
 
     .hero-feature-column {

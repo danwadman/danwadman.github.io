@@ -148,7 +148,7 @@ a {
     outline-offset: 3px;
 }
 
-@mixin experience-card($accent, $hover-text) {
+@mixin experience-card($accent) {
     position: relative;
     display: flex;
     justify-content: center;
@@ -159,7 +159,7 @@ a {
     background-color: #ffffff;
     box-shadow: 0 0 2px #dedede;
     text-align: center;
-    transition: all 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 
     &::before {
         position: absolute;
@@ -167,8 +167,10 @@ a {
         left: 0;
         width: 100%;
         height: 100%;
+        background-color: rgba($accent, 0.1);
         content: "";
-        transition: all 0.3s ease;
+        opacity: 0;
+        transition: opacity 0.2s ease;
     }
 
     .experience-card-content {
@@ -191,62 +193,51 @@ a {
     }
 
     svg {
-        position: relative;
-        top: 0;
+        position: absolute;
+        top: 50%;
+        left: calc(100% + 0.5rem);
         visibility: hidden;
+        opacity: 0;
         fill: none;
-        stroke: #ffffff;
+        stroke: $accent;
         stroke-width: 3;
         stroke-linecap: round;
         stroke-linejoin: round;
-        transform: translateX(0);
-        transition: all 0.1s ease;
+        transform: translate(-4px, -50%);
+        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.2s;
+    }
+
+    &:hover {
+        box-shadow: 0 6px 16px rgba($accent, 0.18);
+        transform: translateY(-2px);
     }
 
     &:hover::before {
-        background: $accent;
-        cursor: pointer;
-    }
-
-    &:hover .experience-card-title {
-        display: inline-block;
-        color: $hover-text;
-        cursor: pointer;
-        transform: translateX(-10px);
-        transition: all 0.4s ease;
+        opacity: 1;
     }
 
     &:hover svg {
         visibility: visible;
-        animation: fadeInFromNone 0.5s forwards;
+        opacity: 1;
+        transform: translate(0, -50%);
+        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s;
     }
 
     &:active {
-        transform: scale(0.96);
+        transform: translateY(0) scale(0.99);
     }
 }
 
 .experience-card-development {
-    @include experience-card($yellow, #000000);
+    @include experience-card($yellow);
 }
 
 .experience-card-design {
-    @include experience-card($red, #ffffff);
+    @include experience-card($red);
 }
 
 .experience-card-accessibility {
-    @include experience-card($green, #ffffff);
-}
-
-@keyframes fadeInFromNone {
-    0%,
-    1% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+    @include experience-card($green);
 }
 
 .fa-github,
