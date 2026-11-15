@@ -1,26 +1,26 @@
-/*
-    Link Styles
-*/
-
 $green: #008080;
 $yellow: #F7B501;
 $red: #6C1E20;
 
 a {
     color: #0067d6;
+
+    &:focus-visible {
+        color: #0067d6;
+        outline: 2px solid #00818F;
+    }
+
+    &:hover {
+        color: #0067d6 !important;
+        text-decoration: underline;
+    }
+
+    &:focus-within {
+        border: 2px solid gray;
+    }
 }
 
-a:focus-visible {
-    color: #0067d6;
-    outline: 2px solid #00818F;
-}
-
-a:hover {
-    color: #0067d6 !important;
-    text-decoration: underline;
-}
-
-.hero a {
+.hero-container a {
     color: #000000;
 }
 
@@ -35,69 +35,97 @@ a:hover {
     outline: 2px solid #ffffff;
 }
 
-.button-primary {
-    background-color: #06abbe;
-    color: #fff;
-}
+@mixin experience-card($accent, $hover-text) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    overflow: hidden;
+    border: 2px solid $accent;
+    border-radius: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px #dedede;
+    text-align: center;
+    transition: all 0.2s ease;
 
-.button-primary:hover,
-.button-primary:focus-visible {
-    background-color: #005660;
-    color: #ffffff;
-}
-
-.button-primary:focus-visible {
-    outline: 2px solid $green;
-}
-
-.button-secondary {
-    background-color: #E3E4E5;
-    color: #000000;
-}
-
-.button-secondary:hover,
-.button-secondary:focus-visible {
-    background-color: #cacaca;
-    color: #000000;
-}
-
-.button-secondary:focus-visible {
-    outline: 2px solid $green;
-}
-
-@-webkit-keyframes fadeInFromNone {
-    0% {
-        opacity: 0;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        transition: all 0.3s ease;
     }
 
-    1% {
-        opacity: 0;
+    .experience-card-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        padding: 0;
     }
 
-    100% {
-        opacity: 1;
+    .experience-card-title {
+        margin: 0;
+        font-weight: 700;
+    }
+
+    i {
+        margin-right: 1rem;
+        color: $accent;
+    }
+
+    svg {
+        position: relative;
+        top: 0;
+        visibility: hidden;
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transform: translateX(0);
+        transition: all 0.1s ease;
+    }
+
+    &:hover::before {
+        background: $accent;
+        cursor: pointer;
+    }
+
+    &:hover .experience-card-title {
+        display: inline-block;
+        color: $hover-text;
+        cursor: pointer;
+        transform: translateX(-10px);
+        transition: all 0.4s ease;
+    }
+
+    &:hover svg {
+        visibility: visible;
+        animation: fadeInFromNone 0.5s forwards;
+    }
+
+    &:active {
+        transform: scale(0.96);
     }
 }
 
-@keyframes fadeInFromNoneIE {
-    0% {
-        opacity: 0;
-    }
+.experience-card-development {
+    @include experience-card($yellow, #000000);
+}
 
-    1% {
-        opacity: 0;
-    }
+.experience-card-design {
+    @include experience-card($red, #ffffff);
+}
 
-    100% {
-        opacity: 1;
-    }
+.experience-card-accessibility {
+    @include experience-card($green, #ffffff);
 }
 
 @keyframes fadeInFromNone {
-    0% {
-        opacity: 0;
-    }
-
+    0%,
     1% {
         opacity: 0;
     }
@@ -107,99 +135,9 @@ a:hover {
     }
 }
 
-.development-box, .design-box, .accessibility-box {
-    position: relative;
-    transition: all 0.2s ease;
-}
-
-a:focus-within {
-    border: 2px solid gray;
-}
-
-.development-box:before, .design-box:before, .accessibility-box:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s ease;
-}
-
-.development-box svg, .design-box svg, .accessibility-box svg {
-    position: relative;
-    top: 0px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #fff;
-    stroke-width: 3;
-    transform: translateX(0);
-    transition: all 0.1s ease;
-    visibility: hidden;
-}
-
-.development-box:hover:before {
-    width: 100%;
-    background: $yellow;
-    cursor: pointer;
-}
-
-.fa-code {
-    color: $yellow;
-}
-
-.design-box:hover:before {
-    width: 100%;
-    background: $red;
-    cursor: pointer;
-}
-
-.fa-palette {
-    color: $red;
-}
-
-.accessibility-box:hover:before {
-    width: 100%;
-    background: $green;
-    cursor: pointer;
-}
-
-.fa-universal-access {
-    color: $green;
-}
-
-.development-box:hover svg, .design-box:hover svg, .accessibility-box:hover svg {
-    visibility: visible;
-    transform: translateX(0);
-    animation-duration: 0.5s;
-    animation-name: fadeInFromNone;
-    animation-fill-mode: forwards;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-name: fadeInFromNone;
-    -webkit-animation-fill-mode: forwards;
-    -ms-animation-duration: 0.5s;
-    -ms-animation-name: fadeInFromNoneIE;
-    -ms-animation-fill-mode: forwards;
-}
-
-.development-box:active, .design-box:active, .accessibility-box:active {
-    transform: scale(0.96);
-}
-
-.development-box:hover h2 {
-    transition: all 0.4s ease;
-    transform: translateX(-10px);
-    display: inline-block;
-    color: #000000;
-    cursor: pointer;
-}
-
-.design-box:hover h2, .accessibility-box:hover h2 {
-    transition: all 0.4s ease;
-    transform: translateX(-10px);
-    display: inline-block;
-    color: #ffffff;
-    cursor: pointer;
+.fa-github,
+.fa-at,
+.fa-file-pdf,
+.fa-file-word {
+    color: #0071EB;
 }

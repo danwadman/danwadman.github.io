@@ -33,7 +33,7 @@
     Skip to content
   </a>
 
-  <div id="page-content-wrapper" class="site-wide">
+  <div id="page-content-wrapper" class="page-shell">
 
     <nav class="site-nav">
 
@@ -42,13 +42,13 @@
         <div class="site-brand" href="#"><a href="https://danwadman.github.io" title="danwadman homepage"><img
               class="logo" alt="danwadman logo" src="img/logo2.png"></a></div>
 
-        <div class="u-justify-end" id="navbarSupportedContent">
+        <div class="site-nav-actions" id="navbarSupportedContent">
 
-          <ul class="site-nav-list u-flex u-flex-row">
+          <ul class="site-nav-list">
 
             <!-- About me -->
 
-            <li class="site-nav-item u-padding-right-1"><a class="site-nav-link" title="Skip to about me section" href="#about-me">About
+            <li class="site-nav-item"><a class="site-nav-link" title="Skip to about me section" href="#about-me">About
                 me</span></a></li>
 
             <!-- Projects -->
@@ -75,37 +75,37 @@
 
         <div id="particles-js"></div>
 
-        <div class="site-container hero">
+        <div class="hero-container">
 
-          <div class="grid-row">
+          <div class="content-grid">
 
-            <div class="grid-full u-flex u-flex-column u-justify-center u-items-center">
+            <div class="hero-intro">
 
-              <h1 class="u-margin-bottom-3 u-text-center u-bold"><span id="clock"">Hi! </span><span class="u-light">I'm Daniel</span></h1>
+              <h1 class="hero-title"><span id="clock"">Hi! </span><span class="hero-name">I'm Daniel</span></h1>
 
-              <div class="divider u-margin-bottom-5"></div>
+              <div class="hero-divider"></div>
 
-              <div class="grid-md-4 u-flex u-justify-center u-padding-0 u-margin-top-5">
+              <div class="hero-portrait-column">
 
-                <div class="img-container-large">
+                <div class="hero-portrait-image">
     
                 </div>
     
               </div>
 
-              <h4 class="u-margin-bottom-5 u-text-center">I have experience in...</h2>
+              <h4 class="hero-tagline">I have experience in...</h2>
 
             </div>
 
-            <div class="grid-md-4 u-margin-bottom-3">
+            <div class="hero-feature-column">
 
               <a href="#dev" title="View development experience">
 
-                <div class="panel-low-drop development-box u-flex u-text-center u-justify-center">
+                <div class="experience-card-development">
 
-                  <div class="u-padding-0 u-flex u-items-center">
+                  <div class="experience-card-content">
 
-                    <h2 class="u-bold u-margin-bottom-0"><i class="fa-solid fa-code u-margin-right-3"></i>Development</h2>
+                    <h2 class="experience-card-title"><i class="fa-solid fa-code"></i>Development</h2>
 
                     <svg width="10px" height="15px" viewBox="0 0 13 10">
                       <path d="M1,5 L11,5"></path>
@@ -120,14 +120,14 @@
 
             </div>
 
-            <div class="grid-md-4 u-margin-bottom-3">
+            <div class="hero-feature-column">
 
               <a href="#des" title="View design experience">
 
-                <div class="panel-low-drop design-box u-flex u-text-center u-justify-center">
+                <div class="experience-card-design">
 
-                  <div class="u-padding-0 u-flex u-items-center">
-                    <h2 class="u-bold u-margin-bottom-0"><i class="fa-solid fa-palette u-margin-right-3"></i>Design</h2>
+                  <div class="experience-card-content">
+                    <h2 class="experience-card-title"><i class="fa-solid fa-palette"></i>Design</h2>
 
                     <svg width="10px" height="15px" viewBox="0 0 13 10">
                       <path d="M1,5 L11,5"></path>
@@ -142,15 +142,15 @@
 
             </div>
 
-            <div class="grid-md-4 u-margin-bottom-3">
+            <div class="hero-feature-column">
 
               <a href="#acc" title="View accessibility experience">
 
-                <div class="panel-low-drop accessibility-box u-flex u-text-center u-justify-center">
+                <div class="experience-card-accessibility">
 
-                  <div class="u-padding-0 u-flex u-items-center">
+                  <div class="experience-card-content">
 
-                    <h2 class="u-bold u-margin-bottom-0"><i class="fa-solid fa-universal-access u-margin-right-3"></i>Accessibility
+                    <h2 class="experience-card-title"><i class="fa-solid fa-universal-access"></i>Accessibility
                     </h2>
 
                     <svg width="10px" height="15px" viewBox="0 0 13 10">
@@ -177,17 +177,17 @@
 
     <!-- About me -->
 
-    <section id="about-me" title="about me" class="u-padding-top-2 u-margin-top-5 u-margin-bottom-5 u-margin-inline-lg u-margin-inline-lg">
+    <section id="about-me" title="about me" class="about-section">
 
       <div class="site-wide">
 
-        <div class="grid-row">
+        <div class="content-grid">
 
-          <div class="grid-full u-margin-top-negative-2 u-padding-4 u-padding-right-4 about-me-text">
+          <div class="about-heading">
 
-            <h2 class="u-margin-bottom-3 u-text-black u-bold"> About me </h2>
+            <h2 class="section-heading-title"> About me </h2>
 
-            <div class="divider u-margin-0"></div>
+            <div class="section-divider"></div>
 
           </div>
 
@@ -197,9 +197,9 @@
 
       <div class="site-container">
 
-        <div class="grid-row u-padding-3 u-margin-top-5">
+        <div class="about-copy-grid">
 
-          <div class="grid-full u-justify-center u-align-center u-margin-top-5">
+          <div class="about-copy">
 
             <p> I have 3 years experience in frontend development, accessibility audits, ux
               improvements and web design and 3 years experience in a customer analyst role.
@@ -223,28 +223,28 @@
 
     <!-- Skillset -->
 
-    <section id="skillset" title="Skillset" class="u-padding-bottom-5">
+    <section id="skillset" title="Skillset" class="skillset-section">
 
-      <div class="site-container u-padding-lg-5">
+      <div class="skillset-container">
 
-        <div class="grid-row">
+        <div class="content-grid">
 
-          <div class="grid-lg-4 u-margin-top-5">
+          <div class="skill-column">
 
-            <div class="panel-low-drop u-flex u-text-center u-justify-center">
+            <div class="skill-card">
 
-              <div class="u-padding-0">
-                <h2 id="dev" class="u-bold">Development</h2>
-                <div class="divider development-box u-margin-bottom-5"></div>
-                <p class="u-padding-3 u-margin-0 u-bold">Languages</p>
-                <ul class="u-padding-0">
+              <div class="skill-card-content">
+                <h2 id="dev" class="text-emphasis">Development</h2>
+                <div class="skill-divider-development"></div>
+                <p class="skill-label">Languages</p>
+                <ul class="skill-list">
                   <li>HTML</li>
                   <li>SCSS</li>
                   <li>Jquery</li>
                 </ul>
 
-                <p class="u-padding-3 u-margin-0 u-bold">Experience</p>
-                <ul class="u-padding-0">
+                <p class="skill-label">Experience</p>
+                <ul class="skill-list">
                   <li>Bootstrap</li>
                   <li>Wordpress templates</li>
                   <li>Compliance to WCAG 2.1 accessibility guidelines</li>
@@ -259,22 +259,22 @@
 
           </div>
 
-          <div class="grid-lg-4 u-margin-top-5">
+          <div class="skill-column">
 
-            <div class="panel-low-drop u-flex u-text-center u-justify-center">
+            <div class="skill-card">
 
-              <div class="u-padding-0">
-                <h2 id="des" class="u-bold">Design</h2>
-                <div class="divider design-box u-margin-bottom-5"></div>
-                <p class="u-padding-3 u-margin-0 u-bold">Tools</p>
-                <ul class="u-padding-0">
+              <div class="skill-card-content">
+                <h2 id="des" class="text-emphasis">Design</h2>
+                <div class="skill-divider-design"></div>
+                <p class="skill-label">Tools</p>
+                <ul class="skill-list">
                   <li>Photoshop (mockups)</li>
                   <li>Adobe XD (prototyping)</li>
                   <li>Draw.io (wireframing)</li>
                 </ul>
 
-                <p class="u-padding-3 u-margin-0 u-bold">Experience</p>
-                <ul class="u-padding-0">
+                <p class="skill-label">Experience</p>
+                <ul class="skill-list">
                   <li>Wireframes and mockups</li>
                   <li>Prototyping</li>
                   <li>Interactive web elements</li>
@@ -291,23 +291,23 @@
 
           </div>
 
-          <div class="grid-lg-4 u-margin-top-5">
+          <div class="skill-column">
 
-            <div class="panel-low-drop u-flex u-text-center u-justify-center">
+            <div class="skill-card">
 
-              <div class="u-padding-0">
-                <h2 id="acc" class="u-bold">Accessibility</h2>
-                <div class="divider accessibility-box u-margin-bottom-5"></div>
-                <p class="u-padding-3 u-margin-0 u-bold">Tools</p>
-                <ul class="u-padding-0">
+              <div class="skill-card-content">
+                <h2 id="acc" class="text-emphasis">Accessibility</h2>
+                <div class="skill-divider-accessibility"></div>
+                <p class="skill-label">Tools</p>
+                <ul class="skill-list">
                   <li>Site improve</li>
                   <li>Accessibility insights</li>
                   <li>Pericles</li>
                   <li>WAVE</li>
                 </ul>
 
-                <p class="u-padding-3 u-margin-0 u-bold">Experience</p>
-                <ul class="u-padding-0">
+                <p class="skill-label">Experience</p>
+                <ul class="skill-list">
                   <li>WCAG 2.1 guidelines</li>
                   <li>Audited a wide range of public sector and government sites</li>
                   <li>Development estimating</li>
@@ -321,29 +321,29 @@
 
           </div>
 
-          <div class="grid-full u-margin-top-5">
+          <div class="learning-column">
 
-            <div class="panel-low-drop u-flex u-text-center u-justify-center">
+            <div class="skill-card">
 
-              <div class="u-padding-0">
-                <h2 class="u-bold">Learning</h2>
+              <div class="skill-card-content">
+                <h2 class="text-emphasis">Learning</h2>
 
-                <ul class="u-padding-0">
-                  <p class="u-padding-3 u-margin-0 u-bold">Programming</p>
-                  <li><span class="u-bold">Javascript ES6</span> – Variables, Methods, Operators</li>
-                  <li><span class="u-bold">Blazor including mudblazor</span> – data binding and simple logic
+                <ul class="skill-list">
+                  <p class="skill-label">Programming</p>
+                  <li><span class="text-emphasis">Javascript ES6</span> – Variables, Methods, Operators</li>
+                  <li><span class="text-emphasis">Blazor including mudblazor</span> – data binding and simple logic
                     and variable concepts</li>
-                  <li><span class="u-bold">React</span> – set up a simple app </li>
-                  <li><span class="u-bold">PHP</span> – Wordpress and drupal functions and simple simple logic
+                  <li><span class="text-emphasis">React</span> – set up a simple app </li>
+                  <li><span class="text-emphasis">PHP</span> – Wordpress and drupal functions and simple simple logic
                     and variable concepts</li>
-                  <li><span class="u-bold">Jenkins</span> – Build code and view error logs </li>
-                  <li><span class="u-bold">MYSQL</span> – Small changes to stored procedures, simple update
+                  <li><span class="text-emphasis">Jenkins</span> – Build code and view error logs </li>
+                  <li><span class="text-emphasis">MYSQL</span> – Small changes to stored procedures, simple update
                     queries using SQL server management </li>
 
-                  <p class="u-padding-3 u-margin-0 u-bold">Other</p>
-                  <li><span class="u-bold">SSH</span> – navigate, edit files, copy files, set permissions
+                  <p class="skill-label">Other</p>
+                  <li><span class="text-emphasis">SSH</span> – navigate, edit files, copy files, set permissions
                   </li>
-                  <li><span class="u-bold">Marketing</span> - Mail Chimp, PHP List – Set up a campaign and
+                  <li><span class="text-emphasis">Marketing</span> - Mail Chimp, PHP List – Set up a campaign and
                     send email </li>
                 </ul>
 
@@ -361,17 +361,17 @@
 
     <!-- Portfolio -->
 
-    <section id="portfolio" class="u-padding-top-2 u-margin-lg-5" title="Portfolio">
+    <section id="portfolio" class="portfolio-section" title="Portfolio">
 
       <div class="site-wide">
 
-        <div class="grid-row">
+        <div class="content-grid">
 
-          <div class="grid-full u-margin-top-negative-2 u-padding-3 u-padding-right-4 u-margin-bottom-5 portfolio-text">
+          <div class="portfolio-heading">
 
-            <h2 class="u-margin-bottom-3 u-text-black u-bold"> Portfolio </h2>
+            <h2 class="section-heading-title"> Portfolio </h2>
 
-            <div class="divider u-margin-0"></div>
+            <div class="section-divider"></div>
 
           </div>
 
@@ -381,25 +381,25 @@
 
       <div class="site-wide">
 
-        <div class="grid-row u-margin-top-5 u-padding-top-5">
+        <div class="portfolio-grid">
 
           <!-- Golden ratio framework -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container golden">
+                <div class="portfolio-image-golden">
                 </div>
 
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="Golden Ratio" href="#golden-ratio" data-dialog-target="#golden-ratio" aria-haspopup="dialog" aria-controls="golden-ratio"
-                    class="u-bold">The
+                <h2 class="portfolio-title"><a title="Golden Ratio" href="#golden-ratio" data-dialog-target="#golden-ratio" aria-haspopup="dialog" aria-controls="golden-ratio"
+                    class="text-emphasis">The
                     golden ratio design framework</h2></a>
                 <p class="description">A design and development framework that uses the golden ratio -
                   <a href="/goldendesign" title="Golden Design Framework"
@@ -424,7 +424,7 @@
                   </button>
                 </div>
                 <div class="dialog-body">
-                  <p class="u-italic u-bold">A design and developmet framework I setup as part of my
+                  <p class="dialog-intro">A design and developmet framework I setup as part of my
                     role at Webbased Ltd. It involved creating a 'design standards' mini site that other developers
                     could use to reference. It was the first 'mini site' I created since starting my role as the front
                     end
@@ -451,13 +451,13 @@
                   difference between
                   the 'longest size' and the sum of the two sizes). </p>
 
-                  <p><img alt="Golden ratio" class="responsive-image u-padding-5 img-border" src="img/golden-ratio.jpg"></p>
+                  <p><img alt="Golden ratio" class="dialog-image" src="img/golden-ratio.jpg"></p>
 
                   <p>For more information on the golden ratio, please visit
                     https://en.wikipedia.org/wiki/Golden_ratio
                 </div>
                 <div class="dialog-footer">
-                  <button type="button" class="button button-secondary" data-dialog-close>Close</button>
+                  <button type="button" class="dialog-close" data-dialog-close>Close</button>
                 </div>
               </div>
             </div>
@@ -465,20 +465,20 @@
 
           <!-- Accessibility audits -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container wcag">
+                <div class="portfolio-image-wcag">
                 </div>
 
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="Accessibility Improvements" href="#accessibility" data-dialog-target="#accessibility" aria-haspopup="dialog" aria-controls="accessibility" class="u-bold">Accessiblity Improvements</h2></a>
+                <h2 class="portfolio-title"><a title="Accessibility Improvements" href="#accessibility" data-dialog-target="#accessibility" aria-haspopup="dialog" aria-controls="accessibility" class="text-emphasis">Accessiblity Improvements</h2></a>
                 <p class="description">Accessiblity audit and front end updates for a large council run website</p>
 
               </div>
@@ -512,11 +512,11 @@
                     <li>Complete the majority of accessibility updates</li>
                   </ul>
 
-                  <p><img alt="Auditing" class="responsive-image u-padding-5 img-border" src="img/wcag.jpg"></p>
+                  <p><img alt="Auditing" class="dialog-image" src="img/wcag.jpg"></p>
 
                 </div>
                 <div class="dialog-footer">
-                  <button type="button" class="button button-secondary" data-dialog-close>Close</button>
+                  <button type="button" class="dialog-close" data-dialog-close>Close</button>
                 </div>
               </div>
             </div>
@@ -524,21 +524,21 @@
 
           <!-- Unified styling of Multi-Tenancy product -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container unified">
+                <div class="portfolio-image-unified">
                 </div>
 
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="Unified styling" href="#unified" data-dialog-target="#unified" aria-haspopup="dialog" aria-controls="unified"
-                    class="u-bold">Unified styling for multi tenancy product</h2></a>
+                <h2 class="portfolio-title"><a title="Unified styling" href="#unified" data-dialog-target="#unified" aria-haspopup="dialog" aria-controls="unified"
+                    class="text-emphasis">Unified styling for multi tenancy product</h2></a>
                 <p class="description">Unifying the styling of five different applications across 4 different languages.
                 </p>
 
@@ -573,32 +573,32 @@
 
                   <div class="site-wide">
 
-                    <div class="grid-row">
+                    <div class="content-grid">
 
-                      <div class="grid-md-6">
+                      <div class="dialog-media-column">
 
-                        <img alt="css idea" class="responsive-image u-padding-5 img-border" src="img/css-idea.jpg">
+                        <img alt="css idea" class="dialog-image" src="img/css-idea.jpg">
 
                       </div>
 
-                      <div class="grid-md-6">
+                      <div class="dialog-media-column">
 
-                        <img alt="sassy css" class="responsive-image u-padding-5 img-border" src="img/sassy-css.jpg">
+                        <img alt="sassy css" class="dialog-image" src="img/sassy-css.jpg">
 
                       </div>
                     </div>
 
-                    <div class="grid-row">
+                    <div class="content-grid">
 
-                      <div class="grid-md-6">
+                      <div class="dialog-media-column">
 
-                        <img alt="original details" class="responsive-image u-padding-5 img-border" src="img/original_details.png">
+                        <img alt="original details" class="dialog-image" src="img/original_details.png">
 
                       </div>
 
-                      <div class="grid-md-6">
+                      <div class="dialog-media-column">
 
-                        <img alt="unified details" class="responsive-image u-padding-5 img-border" src="img/unified_details.jpg">
+                        <img alt="unified details" class="dialog-image" src="img/unified_details.jpg">
 
                       </div>
                     </div>
@@ -606,7 +606,7 @@
 
                 </div>
                 <div class="dialog-footer">
-                  <button type="button" class="button button-secondary" data-dialog-close>Close</button>
+                  <button type="button" class="dialog-close" data-dialog-close>Close</button>
                 </div>
               </div>
             </div>
@@ -614,21 +614,21 @@
 
           <!-- New basket design -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container checkout">
+                <div class="portfolio-image-checkout">
                 </div>
 
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="New Basket" href="#basket" data-dialog-target="#basket" aria-haspopup="dialog" aria-controls="basket"
-                    class="u-bold">Checkout user flow for multi tenancy product</h2></a>
+                <h2 class="portfolio-title"><a title="New Basket" href="#basket" data-dialog-target="#basket" aria-haspopup="dialog" aria-controls="basket"
+                    class="text-emphasis">Checkout user flow for multi tenancy product</h2></a>
                 <p class="description">New basket and checkout designs for a new product.
                 </p>
 
@@ -662,11 +662,11 @@
 
                   <div class="site-wide">
 
-                    <div class="grid-row">
+                    <div class="content-grid">
 
-                      <div class="grid-full">
+                      <div class="full-column">
 
-                        <img alt="Basket and Checkout mockup" class="responsive-image u-padding-5 img-border"
+                        <img alt="Basket and Checkout mockup" class="dialog-image"
                           src="img/basket_checkout_combined.jpg">
 
                       </div>
@@ -675,7 +675,7 @@
 
                 </div>
                 <div class="dialog-footer">
-                  <button type="button" class="button button-secondary" data-dialog-close>Close</button>
+                  <button type="button" class="dialog-close" data-dialog-close>Close</button>
                 </div>
               </div>
             </div>
@@ -683,19 +683,19 @@
 
           <!-- Login design -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container login"></div>
+                <div class="portfolio-image-login"></div>
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="Now Login" href="#login" data-dialog-target="#login" aria-haspopup="dialog" aria-controls="login"
-                    class="u-bold">Login user flow for multi tenancy product</h2></a>
+                <h2 class="portfolio-title"><a title="Now Login" href="#login" data-dialog-target="#login" aria-haspopup="dialog" aria-controls="login"
+                    class="text-emphasis">Login user flow for multi tenancy product</h2></a>
                 <p class="description">New login user flow designs for a new product.
                 </p>
 
@@ -727,11 +727,11 @@
 
                   <div class="site-wide">
 
-                    <div class="grid-row">
+                    <div class="content-grid">
 
-                      <div class="grid-full">
+                      <div class="full-column">
 
-                        <img alt="Login mockup" class="responsive-image u-padding-5 img-border" src="img/login.jpg">
+                        <img alt="Login mockup" class="dialog-image" src="img/login.jpg">
 
                       </div>
                     </div>
@@ -739,7 +739,7 @@
 
                 </div>
                 <div class="dialog-footer">
-                  <button type="button" class="button button-secondary" data-dialog-close>Close</button>
+                  <button type="button" class="dialog-close" data-dialog-close>Close</button>
                 </div>
               </div>
             </div>
@@ -747,19 +747,19 @@
 
           <!-- Vue Js design -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container vue"></div>
+                <div class="portfolio-image-vue"></div>
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="Vue JS" href="#vue" data-dialog-target="#vue" aria-haspopup="dialog" aria-controls="vue"
-                    class="u-bold">Starting out in Vue JS</h2></a>
+                <h2 class="portfolio-title"><a title="Vue JS" href="#vue" data-dialog-target="#vue" aria-haspopup="dialog" aria-controls="vue"
+                    class="text-emphasis">Starting out in Vue JS</h2></a>
                 <p class="description">Beginning the journey of learning Vue JS.
                 </p>
 
@@ -797,11 +797,11 @@
 
                   <div class="site-wide">
 
-                    <div class="grid-row">
+                    <div class="content-grid">
 
-                      <div class="grid-full">
+                      <div class="full-column">
 
-                        <img alt="Login mockup" class="responsive-image u-padding-5 img-border" src="img/vue.jpg">
+                        <img alt="Login mockup" class="dialog-image" src="img/vue.jpg">
 
                       </div>
                     </div>
@@ -809,7 +809,7 @@
 
                 </div>
                 <div class="dialog-footer">
-                  <button type="button" class="button button-secondary" data-dialog-close>Close</button>
+                  <button type="button" class="dialog-close" data-dialog-close>Close</button>
                 </div>
               </div>
             </div>
@@ -817,19 +817,19 @@
 
           <!-- New Marketing Site design -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container marketing"></div>
+                <div class="portfolio-image-marketing"></div>
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="New Marketing Site" href="#marketing" data-dialog-target="#marketing" aria-haspopup="dialog" aria-controls="marketing"
-                    class="u-bold">New Marketing site using Wordpress</h2></a>
+                <h2 class="portfolio-title"><a title="New Marketing Site" href="#marketing" data-dialog-target="#marketing" aria-haspopup="dialog" aria-controls="marketing"
+                    class="text-emphasis">New Marketing site using Wordpress</h2></a>
                 <p class="description">New marketing site designed and developed.
                 </p>
 
@@ -866,12 +866,12 @@
 
                   <div class="site-wide">
 
-                    <div class="grid-row">
+                    <div class="content-grid">
 
-                      <div class="grid-full">
+                      <div class="full-column">
 
-                        <img alt="Careers mockup" class="responsive-image u-padding-5 img-border" src="img/2020_careers.jpg">
-                        <img alt="Job mockup" class="responsive-image u-padding-5 img-border" src="img/2020_careers_job.jpg">
+                        <img alt="Careers mockup" class="dialog-image" src="img/2020_careers.jpg">
+                        <img alt="Job mockup" class="dialog-image" src="img/2020_careers_job.jpg">
 
                       </div>
                     </div>
@@ -879,7 +879,7 @@
 
                 </div>
                 <div class="dialog-footer">
-                  <button type="button" class="button button-secondary" data-dialog-close>Close</button>
+                  <button type="button" class="dialog-close" data-dialog-close>Close</button>
                 </div>
               </div>
             </div>
@@ -887,19 +887,19 @@
 
           <!-- New Product Site design -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container tso"></div>
+                <div class="portfolio-image-tso"></div>
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="New product Marketing Site" href="#tso" data-dialog-target="#tso" aria-haspopup="dialog" aria-controls="tso"
-                    class="u-bold">New product marketing site</h2></a>
+                <h2 class="portfolio-title"><a title="New product Marketing Site" href="#tso" data-dialog-target="#tso" aria-haspopup="dialog" aria-controls="tso"
+                    class="text-emphasis">New product marketing site</h2></a>
                 <p class="description">A lightweight marketing site designed and developed.
                 </p>
 
@@ -936,27 +936,27 @@
 
                   <div class="site-wide">
 
-                    <div class="grid-row">
+                    <div class="content-grid">
 
-                      <div class="grid-md-6">
+                      <div class="dialog-media-column">
 
-                        <img alt="Home mockup" class="responsive-image u-padding-5 img-border" src="img/tso-home.jpg">
+                        <img alt="Home mockup" class="dialog-image" src="img/tso-home.jpg">
 
                         </br /></br />
 
                       </div>
 
-                      <div class="grid-md-6">
-                        <img alt="Pricing mockup" class="responsive-image u-padding-5 img-border" src="img/tso-pricing.jpg">
+                      <div class="dialog-media-column">
+                        <img alt="Pricing mockup" class="dialog-image" src="img/tso-pricing.jpg">
                       </div>
 
                     </div>
 
-                    <div class="grid-row">
+                    <div class="content-grid">
 
-                      <div class="grid-md-6">
+                      <div class="dialog-media-column">
 
-                        <img alt="Training mockup" class="responsive-image u-padding-5 img-border" src="img/tso-training.jpg">
+                        <img alt="Training mockup" class="dialog-image" src="img/tso-training.jpg">
 
                       </div>
 
@@ -965,7 +965,7 @@
 
                 </div>
                 <div class="dialog-footer">
-                  <button type="button" class="button button-secondary" data-dialog-close>Close</button>
+                  <button type="button" class="dialog-close" data-dialog-close>Close</button>
                 </div>
               </div>
             </div>
@@ -973,18 +973,18 @@
 
           <!-- CPD Site Design and Developed -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container cpd"></div>
+                <div class="portfolio-image-cpd"></div>
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="CPD site designed and developed" href="#cpd" data-dialog-target="#cpd" aria-haspopup="dialog" aria-controls="cpd" class="u-bold">CPD site designed and developed</h2></a>
+                <h2 class="portfolio-title"><a title="CPD site designed and developed" href="#cpd" data-dialog-target="#cpd" aria-haspopup="dialog" aria-controls="cpd" class="text-emphasis">CPD site designed and developed</h2></a>
                 <p class="description">Using a 'demo' template, a new cpd site designed and developed.
                 </p>
 
@@ -1028,23 +1028,23 @@
 
                   <div class="site-wide">
 
-                    <div class="grid-row">
+                    <div class="content-grid">
 
-                      <div class="grid-md-6">
+                      <div class="dialog-media-column">
 
-                        <img alt="Demo template" class="responsive-image u-padding-5 img-border" src="img/demo-template.jpg">
+                        <img alt="Demo template" class="dialog-image" src="img/demo-template.jpg">
 
                       </div>
 
-                      <div class="grid-md-6">
+                      <div class="dialog-media-column">
 
-                        <img alt="new site" class="responsive-image u-padding-5 img-border" src="img/new-site.jpg">
+                        <img alt="new site" class="dialog-image" src="img/new-site.jpg">
                       </div>
                     </div>
 
                   </div>
                   <div class="dialog-footer">
-                    <button type="button" class="button button-secondary" data-dialog-close>Close</button>
+                    <button type="button" class="dialog-close" data-dialog-close>Close</button>
                   </div>
                 </div>
               </div>
@@ -1055,19 +1055,19 @@
 
           <!-- Slider Example -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container slider"></div>
+                <div class="portfolio-image-slider"></div>
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="slider example" href="#slider" data-dialog-target="#slider" aria-haspopup="dialog" aria-controls="slider"
-                    class="u-bold">Slider example</h2></a>
+                <h2 class="portfolio-title"><a title="slider example" href="#slider" data-dialog-target="#slider" aria-haspopup="dialog" aria-controls="slider"
+                    class="text-emphasis">Slider example</h2></a>
                 <p class="description">An example of a responsive slider - <a href="https://danwadman.github.io/slider"
                     title="Slider example" target="_blank">https://danwadman.github.io/slider/</a>
                 </p>
@@ -1096,18 +1096,18 @@
 
                   <div class="site-wide">
 
-                    <div class="grid-row">
+                    <div class="content-grid">
 
-                      <div class="grid-full">
+                      <div class="full-column">
 
-                        <img alt="Slider example" class="responsive-image u-padding-5 img-border" src="img/slider-example.jpg">
+                        <img alt="Slider example" class="dialog-image" src="img/slider-example.jpg">
 
                       </div>
                     </div>
 
                   </div>
                   <div class="dialog-footer">
-                    <button type="button" class="button button-secondary" data-dialog-close>Close</button>
+                    <button type="button" class="dialog-close" data-dialog-close>Close</button>
                   </div>
                 </div>
               </div>
@@ -1117,18 +1117,18 @@
 
           <!-- Parks near me -->
 
-          <div class="grid-lg-6 u-padding-3">
+          <div class="portfolio-column">
 
-            <div class="u-margin-right-0 u-margin-left-0 panel u-flex u-flex-wrap u-flex-nowrap-sm">
+            <div class="portfolio-card">
 
-              <div class="u-padding-3 u-align-center">
+              <div class="portfolio-image-wrap">
 
-                <div class="img-container park"></div>
+                <div class="portfolio-image-park"></div>
               </div>
 
-              <div class="u-padding-3">
+              <div class="portfolio-copy">
 
-                <h2 class="title"><a title="Parks Near Me" class="u-bold">Parks Near Me</h2></a>
+                <h2 class="portfolio-title"><a title="Parks Near Me" class="text-emphasis">Parks Near Me</h2></a>
                 <p class="description">An idea I had when having difficulty trying to find a park for our kids. <a
                     href="https://danwadman.github.io/parksnearme" title="Parks Near Me"
                     target="_blank">https://danwadman.github.io/parksnearme/</a>
@@ -1150,32 +1150,32 @@
 
   </div>
 
-  <footer class="u-padding-3">
+  <footer class="site-footer">
 
     <div class="site-wide">
 
       <!-- Contact me -->
 
-      <section id="contact" class="u-padding-top-5 u-padding-bottom-5" title="Contact me">
+      <section id="contact" class="contact-section" title="Contact me">
 
         <div class="site-wide">
 
-          <div class="grid-row u-padding-3">
+          <div class="contact-grid">
 
-            <div class="grid-full">
+            <div class="full-column">
 
-              <h2 class="u-margin-bottom-3 u-text-center u-text-white u-bold"> Contact </h2>
+              <h2 class="contact-title"> Contact </h2>
 
-              <div class="divider"></div>
+              <div class="contact-divider"></div>
 
               <span id="apiapp"
-                class="u-italic u-margin-top-3 u-margin-bottom-3 u-flex u-text-white u-justify-center u-text-center">Saltash, UK</span>
+                class="contact-location">Saltash, UK</span>
 
             </div>
 
-            <div class="grid-lg-3 u-flex u-justify-center u-align-center u-padding-3 u-margin-top-5">
+            <div class="contact-form-column">
 
-              <form action="https://formsubmit.co/69a50af1352e0f63180c07176391b9d3" method="POST">
+              <form class="contact-form" action="https://formsubmit.co/69a50af1352e0f63180c07176391b9d3" method="POST">
               <div class="field-group">
                 <div class="field-row">
                   <div class="field-column">
@@ -1189,27 +1189,27 @@
               <div class="field-group">
                 <textarea placeholder="Your Message" class="field-control" name="message" rows="5" required></textarea>
               </div>
-              <button type="submit" class="button button-large button-dark button-full">Submit Form</button>
+              <button type="submit" class="contact-submit">Submit Form</button>
             </form>
 
             </div>
 
-            <div class="grid-lg-1 u-flex u-justify-center u-align-center u-padding-3 u-margin-top-5"></div>
+            <div class="contact-spacer"></div>
 
-            <div class="grid-lg-3 u-flex u-justify-center u-align-center u-padding-3 u-margin-top-5">
+            <div class="contact-link-column">
 
               <a href="https://github.com/danwadman" title="My Github page">
-                <span><i class="fa-brands fa-github u-margin-right-3"></i>github.com/danwadman</span>
+                <span><i class="fa-brands fa-github"></i>github.com/danwadman</span>
               </a>
 
             </div>
 
-            <div class="grid-lg-1 u-flex u-justify-center u-align-center u-padding-3 u-margin-top-5"></div>
+            <div class="contact-spacer"></div>
 
-            <div class="grid-lg-3 u-flex u-justify-center u-align-center u-flex-wrap u-padding-3 u-margin-top-5">
+            <div class="contact-cv-column">
 
               <a href="docs/daniel-wadman-cv.pdf" title="My CV">
-                <span class="u-margin-right-3"><i class="fa-solid fa-file-pdf u-margin-right-3"></i></i>Download my CV</span>
+                <span class="contact-link-label"><i class="fa-solid fa-file-pdf"></i></i>Download my CV</span>
               </a>
 
             </div>
@@ -1220,9 +1220,9 @@
 
       </section>
 
-      <div class="grid-row">
+      <div class="content-grid">
 
-        <div id="date" class="grid-full"></div>
+        <div id="date" class="full-column"></div>
 
   </footer>
 

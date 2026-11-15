@@ -3,7 +3,7 @@
 */
 
 @media print {
-    header, footer, img, .button {
+    header, .site-footer, img, .contact-submit, .dialog-close {
         display:none !important;
     }
 }
