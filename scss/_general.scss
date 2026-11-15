@@ -261,26 +261,6 @@ h2 {
     color: #0071EB;
 }
 
-.modal.modal-fullscreen .modal-dialog {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    max-width: none;
-}
-
-.modal.modal-fullscreen .modal-content {
-    height: auto;
-    height: 100vh;
-    border-radius: 0;
-    border: none;
-}
-
-.modal.modal-fullscreen .modal-body {
-    overflow-y: auto;
-    color: #000000;
-}
-
 .hero-me {
     background-size: contain !important;
     height: 375px;
@@ -320,8 +300,4 @@ h2 {
 
 .text-small {
     font-size: 1rem;
-}
-
-.text-black {
-    color: #000000;
 }

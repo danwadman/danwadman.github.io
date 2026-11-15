@@ -35,39 +35,33 @@ a:hover {
     outline: 2px solid #ffffff;
 }
 
-.btn {
-    border-radius: 3px !important;
-    height: 3rem;
-    font-size: 1rem !important;
-}
-
-.btn-primary {
+.button-primary {
     background-color: #06abbe;
     color: #fff;
 }
 
-.btn-primary:hover,
-.btn-primary:focus-visible {
+.button-primary:hover,
+.button-primary:focus-visible {
     background-color: #005660;
     color: #ffffff;
 }
 
-.btn-primary:focus-visible {
+.button-primary:focus-visible {
     outline: 2px solid $green;
 }
 
-.btn-secondary {
+.button-secondary {
     background-color: #E3E4E5;
     color: #000000;
 }
 
-.btn-secondary:hover,
-.btn-secondary:focus-visible {
+.button-secondary:hover,
+.button-secondary:focus-visible {
     background-color: #cacaca;
     color: #000000;
 }
 
-.btn-secondary:focus-visible {
+.button-secondary:focus-visible {
     outline: 2px solid $green;
 }
 

@@ -12,19 +12,15 @@ nav {
     transition: height .15s linear, width .15s linear, max-height .15s linear, padding .15s linear;
 }
 
-.nav-item {
+.site-nav-item {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.nav-link {
+.site-nav-link {
     @include for-tiny-mobile {    
         font-size: 0.625rem; 
      }
-}
-
-.navbar-brand {
-    margin-right: 0px !important;
 }
 
 /* accessibility */
@@ -68,14 +64,14 @@ nav {
 }
 
 /* Slide hover */
-.nav-item {
+.site-nav-item {
     text-decoration: none;
     display: inline-block;
     color: #F89C27;
 }
 
 /* add a empty string after the elment with class .slide-left-right */
-.nav-item:after {
+.site-nav-item:after {
     content: '';
     display: block;
     height: 2px;
@@ -92,7 +88,7 @@ nav {
 
 /* Change the width and background on hover, aka sliding out */
 
-.nav-item:hover:after {
+.site-nav-item:hover:after {
     width: 100%;
     background: #F89C27;
 }
