@@ -61,7 +61,7 @@ h2 {
   position: relative;
   margin: 3rem 0;
   padding-top: 0.5rem;
-  padding-bottom: 200px;
+  padding-bottom: 3rem;
   border-radius: 25px;
   background-color: teal;
   color: #ffffff;
@@ -69,7 +69,6 @@ h2 {
 
 .about-heading {
   position: absolute;
-  grid-column: 1 / -1;
   margin-top: -0.5rem;
   padding: 1.5rem;
   padding-right: 1.5rem;
@@ -85,7 +84,6 @@ h2 {
 
 .portfolio-heading {
   position: absolute;
-  grid-column: 1 / -1;
   margin-top: -0.5rem;
   margin-bottom: 3rem;
   padding: 1rem;
@@ -101,7 +99,6 @@ h2 {
 }
 
 .skillset-section {
-  margin-top: -275px;
   padding-bottom: 3rem;
 }
 
@@ -133,15 +130,6 @@ h2 {
 
 .text-emphasis {
   font-weight: 700;
-}
-
-.hero-portrait-image {
-  width: 200px;
-  height: 200px;
-  float: left;
-  border-radius: 50px;
-  background: url(../img/me-cut-out.jpg) center / cover;
-  filter: saturate(0.5);
 }
 
 .portfolio-card {
@@ -389,22 +377,24 @@ h2 {
   margin-top: -475px;
 }
 
-.content-grid,
-.about-copy-grid,
-.portfolio-grid,
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+.hero-container > .content-layout {
+  width: 100%;
+}
+
+.content-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
-.full-column {
-  grid-column: 1 / -1;
+.full-width-item {
+  flex: 1 0 100%;
   min-width: 0;
 }
 
 .hero-intro {
-  grid-column: 1 / -1;
+  flex: 0 0 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -417,54 +407,53 @@ h2 {
   font-weight: 700;
 }
 
-.hero-name {
-  font-weight: 300;
-}
-
 .hero-tagline {
   margin-bottom: 3rem;
   text-align: center;
 }
 
-.hero-portrait-column {
-  display: flex;
-  width: 33.333%;
-  justify-content: center;
-  margin-top: 3rem;
-  padding: 0;
-}
-
 .hero-feature-column {
-  grid-column: 1 / -1;
+  flex: 1 1 18rem;
+  max-width: 22rem;
   min-width: 0;
   margin-bottom: 1rem;
 }
 
-.about-copy-grid {
+.hero-feature-column > a {
+  display: block;
+}
+
+.about-copy-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 3rem;
   padding: 1rem;
 }
 
 .about-copy {
-  grid-column: 1 / -1;
+  flex: 1 1 100%;
   align-self: center;
   margin-top: 3rem;
 }
 
 .skill-column,
 .learning-column {
-  grid-column: 1 / -1;
+  flex: 1 1 100%;
   min-width: 0;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
-.portfolio-grid {
+.portfolio-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 3rem;
   padding-top: 3rem;
 }
 
 .portfolio-column {
-  grid-column: 1 / -1;
+  flex: 1 1 100%;
   min-width: 0;
   padding: 1rem;
 }
@@ -479,7 +468,7 @@ h2 {
 }
 
 .dialog-media-column {
-  grid-column: 1 / -1;
+  flex: 1 1 100%;
   min-width: 0;
 }
 
@@ -488,14 +477,18 @@ h2 {
   padding-bottom: 3rem;
 }
 
-.contact-grid {
+.contact-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   padding: 1rem;
 }
 
 .contact-form-column,
 .contact-link-column,
 .contact-cv-column {
-  grid-column: 1 / -1;
+  flex: 1 1 100%;
   display: flex;
   min-width: 0;
   align-items: center;
@@ -504,16 +497,8 @@ h2 {
   padding: 1rem;
 }
 
-.contact-spacer {
-  display: none;
-}
-
 .contact-form {
   width: 100%;
-}
-
-.footer-date {
-  grid-column: 1 / -1;
 }
 
 .field-row {
@@ -655,11 +640,11 @@ h2 {
 
 @media (min-width: 768px) {
   .hero-feature-column {
-    grid-column: span 4;
+    flex: 1 1 14rem;
   }
 
   .dialog-media-column {
-    grid-column: span 6;
+    flex: 1 1 calc(50% - 1rem);
   }
 }
 
@@ -669,11 +654,11 @@ h2 {
   }
 
   .skillset-container {
-    padding: 3rem;
+    padding: 0 0.75rem;
   }
 
   .skill-column {
-    grid-column: span 4;
+    flex: 1 1 calc(33.333% - 1rem);
   }
 
   .portfolio-section {
@@ -681,18 +666,19 @@ h2 {
   }
 
   .portfolio-column {
-    grid-column: span 6;
+    flex: 1 1 calc(50% - 1rem);
   }
 
   .contact-form-column,
   .contact-link-column,
   .contact-cv-column {
-    grid-column: span 3;
+    flex: 1 1 15rem;
   }
+}
 
-  .contact-spacer {
-    display: block;
-    grid-column: span 1;
+@media (min-width: 576px) and (max-width: 991px) {
+  .skill-column {
+    flex: 1 1 calc(50% - 1rem);
   }
 }
 

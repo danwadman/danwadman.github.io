@@ -83,7 +83,7 @@ h2 {
     position: relative;
     margin: 3rem 0;
     padding-top: 0.5rem;
-    padding-bottom: 200px;
+    padding-bottom: 3rem;
     border-radius: 25px;
     background-color: $green;
     color: #ffffff;
@@ -91,7 +91,6 @@ h2 {
 
 .about-heading {
     position: absolute;
-    grid-column: 1 / -1;
     margin-top: -0.5rem;
     padding: 1.5rem;
     padding-right: 1.5rem;
@@ -107,7 +106,6 @@ h2 {
 
 .portfolio-heading {
     position: absolute;
-    grid-column: 1 / -1;
     margin-top: -0.5rem;
     margin-bottom: 3rem;
     padding: 1rem;
@@ -123,7 +121,6 @@ h2 {
 }
 
 .skillset-section {
-    margin-top: -275px;
     padding-bottom: 3rem;
 }
 
@@ -155,15 +152,6 @@ h2 {
 
 .text-emphasis {
     font-weight: 700;
-}
-
-.hero-portrait-image {
-    width: 200px;
-    height: 200px;
-    float: left;
-    border-radius: 50px;
-    background: url(../img/me-cut-out.jpg) center / cover;
-    filter: saturate(0.5);
 }
 
 .portfolio-card {

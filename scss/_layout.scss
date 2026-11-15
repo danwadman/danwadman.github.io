@@ -1,9 +1,3 @@
-@mixin twelve-column-grid {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 1rem;
-}
-
 .site-wide {
     width: 100%;
 }
@@ -24,17 +18,24 @@
     margin-top: -475px;
 }
 
-.content-grid {
-    @include twelve-column-grid;
+.hero-container > .content-layout {
+    width: 100%;
 }
 
-.full-column {
-    grid-column: 1 / -1;
+.content-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.full-width-item {
+    flex: 1 0 100%;
     min-width: 0;
 }
 
 .hero-intro {
-    grid-column: 1 / -1;
+    flex: 0 0 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,37 +48,32 @@
     font-weight: 700;
 }
 
-.hero-name {
-    font-weight: 300;
-}
-
 .hero-tagline {
     margin-bottom: 3rem;
     text-align: center;
 }
 
-.hero-portrait-column {
-    display: flex;
-    width: 33.333%;
-    justify-content: center;
-    margin-top: 3rem;
-    padding: 0;
-}
-
 .hero-feature-column {
-    grid-column: 1 / -1;
+    flex: 1 1 18rem;
+    max-width: 22rem;
     min-width: 0;
     margin-bottom: 1rem;
+
+    > a {
+        display: block;
+    }
 }
 
-.about-copy-grid {
-    @include twelve-column-grid;
+.about-copy-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-top: 3rem;
     padding: 1rem;
 }
 
 .about-copy {
-    grid-column: 1 / -1;
+    flex: 1 1 100%;
     align-self: center;
     margin-top: 3rem;
 }
@@ -88,19 +84,21 @@
 
 .skill-column,
 .learning-column {
-    grid-column: 1 / -1;
+    flex: 1 1 100%;
     min-width: 0;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
-.portfolio-grid {
-    @include twelve-column-grid;
+.portfolio-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-top: 3rem;
     padding-top: 3rem;
 }
 
 .portfolio-column {
-    grid-column: 1 / -1;
+    flex: 1 1 100%;
     min-width: 0;
     padding: 1rem;
 }
@@ -115,7 +113,7 @@
 }
 
 .dialog-media-column {
-    grid-column: 1 / -1;
+    flex: 1 1 100%;
     min-width: 0;
 }
 
@@ -124,15 +122,18 @@
     padding-bottom: 3rem;
 }
 
-.contact-grid {
-    @include twelve-column-grid;
+.contact-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     padding: 1rem;
 }
 
 .contact-form-column,
 .contact-link-column,
 .contact-cv-column {
-    grid-column: 1 / -1;
+    flex: 1 1 100%;
     display: flex;
     min-width: 0;
     align-items: center;
@@ -141,16 +142,8 @@
     padding: 1rem;
 }
 
-.contact-spacer {
-    display: none;
-}
-
 .contact-form {
     width: 100%;
-}
-
-.footer-date {
-    grid-column: 1 / -1;
 }
 
 .field-row {
@@ -292,11 +285,11 @@
 
 @media (min-width: 768px) {
     .hero-feature-column {
-        grid-column: span 4;
+        flex: 1 1 14rem;
     }
 
     .dialog-media-column {
-        grid-column: span 6;
+        flex: 1 1 calc(50% - 1rem);
     }
 }
 
@@ -306,11 +299,11 @@
     }
 
     .skillset-container {
-        padding: 3rem;
+        padding: 0 0.75rem;
     }
 
     .skill-column {
-        grid-column: span 4;
+        flex: 1 1 calc(33.333% - 1rem);
     }
 
     .portfolio-section {
@@ -319,18 +312,19 @@
     }
 
     .portfolio-column {
-        grid-column: span 6;
+        flex: 1 1 calc(50% - 1rem);
     }
 
     .contact-form-column,
     .contact-link-column,
     .contact-cv-column {
-        grid-column: span 3;
+        flex: 1 1 15rem;
     }
+}
 
-    .contact-spacer {
-        display: block;
-        grid-column: span 1;
+@media (min-width: 576px) and (max-width: 991px) {
+    .skill-column {
+        flex: 1 1 calc(50% - 1rem);
     }
 }
 
