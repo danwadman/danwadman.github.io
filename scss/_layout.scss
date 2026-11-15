@@ -100,6 +100,7 @@
 .portfolio-column {
     flex: 1 1 100%;
     min-width: 0;
+    box-sizing: border-box;
     padding: 1rem;
 }
 
@@ -277,7 +278,7 @@
     outline: none;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
     .portfolio-card {
         flex-wrap: nowrap;
     }
@@ -290,6 +291,10 @@
 
     .dialog-media-column {
         flex: 1 1 calc(50% - 1rem);
+    }
+
+    .portfolio-column {
+        flex: 1 1 calc(50% - 0.5rem);
     }
 }
 
@@ -312,7 +317,7 @@
     }
 
     .portfolio-column {
-        flex: 1 1 calc(50% - 1rem);
+        flex: 1 1 calc(33.333% - 0.667rem);
     }
 
     .contact-form-column,
