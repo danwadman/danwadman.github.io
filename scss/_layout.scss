@@ -1,7 +1,3 @@
-.site-wide {
-    width: 100%;
-}
-
 .site-container {
     width: 100%;
     max-width: 1140px;
@@ -15,27 +11,13 @@
 .hero-container {
     @extend .site-container;
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
     margin-top: -475px;
     align-items: center;
-}
-
-.hero-container > .content-layout {
-    width: 100%;
-    align-content: center;
     justify-content: flex-start;
-}
-
-.content-layout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-content: center;
     gap: 1rem;
-}
-
-.full-width-item {
-    flex: 1 0 100%;
-    min-width: 0;
 }
 
 .hero-intro {
@@ -118,6 +100,10 @@
 
 .skillset-container {
     @extend .site-container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .skill-column,
@@ -151,9 +137,20 @@
     padding: 1rem;
 }
 
-.dialog-media-column {
-    flex: 1 1 100%;
+.dialog-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.dialog-gallery > .dialog-image {
+    flex: 1 0 100%;
     min-width: 0;
+}
+
+.dialog-gallery--stacked > .dialog-image {
+    flex-basis: 100%;
 }
 
 .contact-section {
@@ -167,6 +164,11 @@
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
+}
+
+.contact-intro {
+    flex: 1 0 100%;
+    min-width: 0;
 }
 
 .contact-form-column,
@@ -325,7 +327,7 @@
         flex: 1 1 14rem;
     }
 
-    .dialog-media-column {
+    .dialog-gallery:not(.dialog-gallery--stacked) > .dialog-image {
         flex: 1 1 calc(50% - 1rem);
     }
 
