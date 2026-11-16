@@ -16,10 +16,19 @@ var Afternoon = React.createClass({
   }
 });
 
+var Evening = React.createClass({
+  render: function() {
+    return (
+      React.createElement('span', { className: 'evening' }, 'Evening! ')
+    );
+  }
+});
+
 var Clock = React.createClass({
   render: function() {
     return (
-      this.props.hour < 12 ? <Morning /> : <Afternoon /> 
+      this.props.hour < 12 ? <Morning /> :
+      this.props.hour < 18 ? <Afternoon /> : <Evening />
     );
   }
 });
