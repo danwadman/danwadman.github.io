@@ -829,7 +829,7 @@ h2 {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hero-container {
     min-height: 0;
   }
@@ -847,6 +847,7 @@ h2 {
   .hero-portrait {
     width: min(100%, 13rem);
     max-height: 13rem;
+    justify-self: start;
   }
 }
 
