@@ -98,6 +98,13 @@ h2 {
   padding-top: 0.5rem;
 }
 
+@media (max-width: 991px) {
+  .about-section,
+  .portfolio-section {
+    border-radius: 0;
+  }
+}
+
 .portfolio-heading {
   position: absolute;
   left: 0;
