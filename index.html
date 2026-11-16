@@ -183,9 +183,11 @@
 
     </header>
 
+    <main id="main-content">
+
     <!-- About me -->
 
-    <section id="about-me" title="about me" class="about-section">
+    <section id="about-me" title="about me" class="about-section" tabindex="-1">
 
       <div class="site-wide">
 
@@ -336,8 +338,8 @@
               <div class="skill-card-content">
                 <h2 class="text-emphasis">Learning</h2>
 
+                <p class="skill-label">Programming</p>
                 <ul class="skill-list">
-                  <p class="skill-label">Programming</p>
                   <li><span class="text-emphasis">Javascript ES6</span> – Variables, Methods, Operators</li>
                   <li><span class="text-emphasis">Blazor including mudblazor</span> – data binding and simple logic
                     and variable concepts</li>
@@ -347,8 +349,9 @@
                   <li><span class="text-emphasis">Jenkins</span> – Build code and view error logs </li>
                   <li><span class="text-emphasis">MYSQL</span> – Small changes to stored procedures, simple update
                     queries using SQL server management </li>
-
-                  <p class="skill-label">Other</p>
+                </ul>
+                <p class="skill-label">Other</p>
+                <ul class="skill-list">
                   <li><span class="text-emphasis">SSH</span> – navigate, edit files, copy files, set permissions
                   </li>
                   <li><span class="text-emphasis">Marketing</span> - Mail Chimp, PHP List – Set up a campaign and
@@ -853,7 +856,7 @@
             <div class="dialog-window" role="document">
               <div class="dialog-content">
                 <div class="dialog-header">
-                  <h1 class="dialog-title" id="marketing-label">New Marketing Site</h1>
+                  <h1 class="dialog-title" id="marketing-title">New Marketing Site</h1>
                   <button type="button" class="dialog-x" data-dialog-close aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -923,7 +926,7 @@
             <div class="dialog-window" role="document">
               <div class="dialog-content">
                 <div class="dialog-header">
-                  <h1 class="dialog-title" id="marketing-label">New product marketing site</h1>
+                  <h1 class="dialog-title" id="tso-title">New product marketing site</h1>
                   <button type="button" class="dialog-x" data-dialog-close aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -1008,7 +1011,7 @@
             <div class="dialog-window" role="document">
               <div class="dialog-content">
                 <div class="dialog-header">
-                  <h1 class="dialog-title" id="marketing-label">CPD site designed and developed</h1>
+                  <h1 class="dialog-title" id="cpd-title">CPD site designed and developed</h1>
                   <button type="button" class="dialog-x" data-dialog-close aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -1092,7 +1095,7 @@
             <div class="dialog-window" role="document">
               <div class="dialog-content">
                 <div class="dialog-header">
-                  <h1 class="dialog-title" id="marketing-label">Slider example</h1>
+                  <h1 class="dialog-title" id="slider-title">Slider example</h1>
                   <button type="button" class="dialog-x" data-dialog-close aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -1156,6 +1159,8 @@
 
   </section>
 
+    </main>
+
   </div>
 
   <footer class="site-footer">
@@ -1187,15 +1192,18 @@
               <div class="field-group">
                 <div class="field-row">
                   <div class="field-column">
-                    <input type="text" name="name" class="field-control" placeholder="Full Name" required>
+                    <label class="field-label" for="contact-name">Full Name</label>
+                    <input type="text" id="contact-name" name="name" class="field-control" required>
                   </div>
                   <div class="field-column">
-                    <input type="email" name="email" class="field-control" placeholder="Email Address" required>
+                    <label class="field-label" for="contact-email">Email Address</label>
+                    <input type="email" id="contact-email" name="email" class="field-control" required>
                   </div>
                 </div>
               </div>
               <div class="field-group">
-                <textarea placeholder="Your Message" class="field-control" name="message" rows="5" required></textarea>
+                <label class="field-label" for="contact-message">Your Message</label>
+                <textarea id="contact-message" class="field-control" name="message" rows="5" required></textarea>
               </div>
               <button type="submit" class="contact-submit">Submit Form</button>
             </form>

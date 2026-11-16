@@ -42,7 +42,7 @@ a {
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
-    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 
     &:focus-visible {
         outline: 3px solid #111111;
@@ -68,32 +68,36 @@ a {
 }
 
 .hero-actions .hero-secondary-action {
-    border-color: $red;
+    border-color: #000000;
+    background-color: #000000;
+    color: #ffffff;
 
     i {
-        color: $red;
+        color: #ffffff;
     }
 }
 
 .hero-actions .hero-primary-action:hover {
     border-color: $green;
-    background-color: $green;
-    color: #ffffff !important;
-}
-
-.hero-actions .hero-primary-action:hover i,
-.hero-actions .hero-secondary-action:hover i {
-    color: #ffffff;
+    background-color: rgba($green, 0.1);
+    box-shadow: 0 6px 16px rgba($green, 0.18);
+    color: #000000 !important;
 }
 
 .hero-actions .hero-secondary-action:hover {
-    border-color: $red;
-    background-color: $red;
+    border-color: #000000;
+    background-color: #000000;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
     color: #ffffff !important;
 }
 
+.hero-actions .hero-primary-action:hover,
+.hero-actions .hero-secondary-action:hover {
+    transform: translateY(-2px);
+}
+
 .hero-actions a:active {
-    transform: scale(0.96);
+    transform: translateY(0) scale(0.99);
 }
 
 @media (max-width: 575px) {

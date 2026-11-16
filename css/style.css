@@ -594,6 +594,13 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.field-label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
 .field-control {
   display: block;
   width: 100%;
@@ -971,7 +978,7 @@ a:focus-within {
   font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .hero-actions a:focus-visible {
@@ -997,32 +1004,36 @@ a:focus-within {
 }
 
 .hero-actions .hero-secondary-action {
-  border-color: #6C1E20;
+  border-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .hero-actions .hero-secondary-action i {
-  color: #6C1E20;
+  color: #ffffff;
 }
 
 .hero-actions .hero-primary-action:hover {
   border-color: #008080;
-  background-color: #008080;
-  color: #ffffff !important;
-}
-
-.hero-actions .hero-primary-action:hover i,
-.hero-actions .hero-secondary-action:hover i {
-  color: #ffffff;
+  background-color: rgba(0, 128, 128, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 128, 128, 0.18);
+  color: #000000 !important;
 }
 
 .hero-actions .hero-secondary-action:hover {
-  border-color: #6C1E20;
-  background-color: #6C1E20;
+  border-color: #000000;
+  background-color: #000000;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
   color: #ffffff !important;
 }
 
+.hero-actions .hero-primary-action:hover,
+.hero-actions .hero-secondary-action:hover {
+  transform: translateY(-2px);
+}
+
 .hero-actions a:active {
-  transform: scale(0.96);
+  transform: translateY(0) scale(0.99);
 }
 
 @media (max-width: 575px) {
