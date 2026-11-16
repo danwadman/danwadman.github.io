@@ -267,7 +267,9 @@ h2 {
 .dialog-image {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
+    box-sizing: border-box;
     padding: 3rem;
     border: 1px solid lightgrey;
 }
