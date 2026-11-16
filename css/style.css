@@ -64,6 +64,7 @@ h2 {
   padding-top: 0.5rem;
   padding-bottom: 3rem;
   border-radius: 25px;
+  border-top-left-radius: 0;
   background-color: teal;
   color: #ffffff;
 }
@@ -94,15 +95,9 @@ h2 {
 .portfolio-section {
   position: relative;
   border-radius: 25px;
+  border-top-left-radius: 0;
   background-color: gainsboro;
   padding-top: 0.5rem;
-}
-
-@media (max-width: 991px) {
-  .about-section,
-  .portfolio-section {
-    border-radius: 0;
-  }
 }
 
 .portfolio-heading {
