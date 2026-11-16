@@ -71,11 +71,24 @@ h2 {
 .about-heading {
   position: absolute;
   left: 0;
-  margin-top: -0.5rem;
-  padding: 1.5rem;
-  padding-right: 1.5rem;
-  border-bottom-right-radius: 95px;
+  margin-top: -0.25em;
+  padding: 0.75em;
+  padding-right: 0.75em;
+  border-bottom-right-radius: 3em;
   background-color: cadetblue;
+  font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .about-heading {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-heading {
+    font-size: 1.5rem;
+  }
 }
 
 .portfolio-section {
@@ -88,18 +101,38 @@ h2 {
 .portfolio-heading {
   position: absolute;
   left: 0;
-  margin-top: -0.5rem;
+  margin-top: -0.25em;
   margin-bottom: 3rem;
-  padding: 1rem;
-  padding-right: 1.5rem;
-  border-bottom-right-radius: 95px;
+  padding: 0.5em;
+  padding-right: 0.75em;
+  border-bottom-right-radius: 3em;
   background-color: #ececec;
+  font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .portfolio-heading {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio-heading {
+    font-size: 1.5rem;
+  }
 }
 
 .section-heading-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5em;
   color: #000000;
   font-weight: 700;
+  font-size: inherit;
+}
+
+.about-heading .section-divider,
+.portfolio-heading .section-divider {
+  width: 1.72em;
+  height: 0.125em;
 }
 
 .skillset-section {
